@@ -1,0 +1,2087 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+    <script type="text/javascript">
+    var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+    </script>
+    
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link rel="stylesheet" type="text/css"
+        href="/static/https%3A/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+        <link href="/static/https%3A/fonts.googleapis.com/css%3Ffamily%3DPoppins%3A400%2C700%7CRoboto%3A400%2C700%26display%3Dswap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+        
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap' %}" rel="stylesheet">
+        
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+        
+        <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+    
+        <script>
+            (function(h,e,a,t,m,p) {
+                m=e.createElement(a);m.async=!0;m.src=t;
+                p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+            })(window,document,'script','https://u.heatmap.it/log.js');
+        </script>
+    
+        <!-- Murat Cengiz :) -->
+        <script>
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:1037189,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
+    
+      <link rel="stylesheet" href="https://brenebrown.com/wp-content/themes/brenebrown/dist/app.css?v=0.1.0" type="text/css" media="all"/>
+      <link rel="stylesheet" href="https://brenebrown.com/wp-content/themes/brenebrown/static/css/aa-styles.css" type="text/css" media="all"/>
+      <link rel="stylesheet" href="https://brenebrown.com/wp-content/themes/brenebrown/static/css/vanilla-style.css" type="text/css" media="all"/>
+      <link rel="stylesheet" href="https://brenebrown.com/wp-content/themes/brenebrown/static/css/simplebar.css" type="text/css" media="all"/>
+    
+      <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    
+      <!-- Murat Cengiz :) -->
+      <title>Cihan Buğdaycı</title>
+      <meta name="description" content="İnsanın İçi Büyükse Dünya Küçüktür." />
+    <link rel="canonical" href="//" >
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cihan Buğdaycı" />
+    <meta property="og:description" content="İnsanın İçi Büyükse Dünya Küçüktür." />
+    <meta property="og:url" content="//" >
+    <meta property="og:site_name" content="Cihan Buğdaycı" />
+    <meta property="article:modified_time" content="2022-05-25T12:23:04+00:00" />
+    <meta property="og:image" content="/static/images/cihanbugdayci2.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+      <meta name="twitter:image" content="" />
+      <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.cihanbugdayci.com/#website","url":"https://www.cihanbugdayci.com","name":"Cihan Buğdaycı","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.cihanbugdayci.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.cihanbugdayci.com","url":"https://www.cihanbugdayci.com","name":"Cihan Buğdaycı","isPartOf":{"@id":"https://www.cihanbugdayci.com/#website"},"datePublished":"2021-09-30T20:52:23+00:00","dateModified":"2022-05-25T12:23:04+00:00","description":"İnsanın İçi Büyükse Dünya Küçüktür.","breadcrumb":{"@id":"https://www.cihanbugdayci.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.cihanbugdayci.com"]}]},{"@type":"BreadcrumbList","@id":"https://www.cihanbugdayci.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+      <!-- / Murat Cengizz :) -->
+    
+    
+    <link rel='stylesheet' id='aa_course_access-css'  href='https://brenebrown.com/wp-content/plugins/aa-course-access/assets/aa_course_access.css?v=1637348371&#038;ver=6.0.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='gform_basic-css'  href='https://brenebrown.com/wp-content/plugins/gravityforms/css/basic.min.css?ver=2.5.16' type='text/css' media='all' />
+    <link rel='stylesheet' id='gform_theme_ie11-css'  href='https://brenebrown.com/wp-content/plugins/gravityforms/css/theme-ie11.min.css?ver=2.5.16' type='text/css' media='all' />
+    <link rel='stylesheet' id='gform_theme-css'  href='https://brenebrown.com/wp-content/plugins/gravityforms/css/theme.min.css?ver=2.5.16' type='text/css' media='all' />
+    <link rel='stylesheet' id='gaddon_form_settings_css-css'  href='https://brenebrown.com/wp-content/plugins/gravityforms/includes/addon/css/gaddon_settings.min.css?ver=2.5.16' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+    body{--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');}
+    </style>
+    <link rel='stylesheet' id='hide-admin-bar-based-on-user-roles-css'  href='https://brenebrown.com/wp-content/plugins/hide-admin-bar-based-on-user-roles/public/css/hide-admin-bar-based-on-user-roles-public.css?ver=3.2.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='ups-blocks-css'  href='https://brenebrown.com/wp-content/plugins/ups-blocks/build/style.css?ver=70d081b8151bd7cc933d8633b67c9b9a' type='text/css' media='all' />
+    <script type='text/javascript' src='https://brenebrown.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://brenebrown.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <script type='text/javascript' defer='defer' src='https://brenebrown.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.5.16' id='gform_json-js'></script>
+    <script type='text/javascript' id='gform_gravityforms-js-extra'>
+    /* <![CDATA[ */
+    var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Tue","wednesday":"Wed","thursday":"Thu","friday":"Fri","saturday":"Sat","sunday":"Sun"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+    var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/brenebrown.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/brenebrown.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+    var gf_legacy_multi = {"10":""};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' defer='defer' src='https://brenebrown.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.5.16' id='gform_gravityforms-js'></script>
+    <script type='text/javascript' src='https://brenebrown.com/wp-content/plugins/hide-admin-bar-based-on-user-roles/public/js/hide-admin-bar-based-on-user-roles-public.js?ver=3.2.0' id='hide-admin-bar-based-on-user-roles-js'></script>
+    <script type='text/javascript' id='wk-tag-manager-script-js-after'>
+    function shouldTrack(){
+    var trackLoggedIn = false;
+    var loggedIn = false;
+    if(!loggedIn){
+    return true;
+    } else if( trackLoggedIn ) {
+    return true;
+    }
+    return false;
+    }
+    function hasWKGoogleAnalyticsCookie() {
+    return (new RegExp('wp_wk_ga_untrack_' + document.location.hostname)).test(document.cookie);
+    }
+    if (!hasWKGoogleAnalyticsCookie() && shouldTrack()) {
+    //Google Tag Manager
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+    'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5Z5374T');
+    }
+    </script>
+    <link rel="icon" href="{% static 'images/logo1.jpg' %}" sizes="32x32" />
+    <link rel="icon" href="{% static 'images/logo1.jpg' %}" sizes="192x192" />
+    
+    
+    <link rel="stylesheet" href="{% static 'js/slider_deneme.js' %}">
+    <link rel="stylesheet" href="{% static 'css/slider_deneme.css' %}">
+    </head>
+<body class="home page-template page-template-page_homepage page-template-page_homepage-php page page-id-14429  ">
+    
+
+    <a href="#content" class="skip-to-content" tabindex="0">İçeriği Atla</a>
+
+    <div class="shell">
+
+    
+<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin">
+      <defs>
+        <symbol id="play" viewbox="0 0 26 26">
+          <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                d="M13 26C20.1797 26 26 20.1797 26 13C26 5.8203 20.1797 0 13 0C5.8203 0 0 5.8203 0 13C0 20.1797 5.8203 26 13 26ZM19.5622 13.0021L9.06218 6.93994V19.0643L19.5622 13.0021Z"/>
+        </symbol>
+      
+        <symbol id="search" viewbox="0 0 26 26">
+          <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.1321 18.8998C15.4388 20.2161 13.3109 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11C21 13.3109 20.2162 15.4386 18.8999 17.132L25.884 24.1161L24.1162 25.8839L17.1321 18.8998ZM18.5 11C18.5 15.1421 15.1421 18.5 11 18.5C6.85786 18.5 3.5 15.1421 3.5 11C3.5 6.85786 6.85786 3.5 11 3.5C15.1421 3.5 18.5 6.85786 18.5 11Z"/>
+        </symbol>
+      
+        <symbol id="menu" viewbox="0 0 30 16">
+          <path fill="currentColor" d="M0 0H30V2H0V0ZM0 7H30V9H0V7ZM30 14H0V16H30V14Z"/>
+        </symbol>
+      
+        <symbol id="scroll" viewBox="0 0 11 13">
+          <path id="Arrow"
+                d="M6.055.238a.827.827,0,0,1,.23.574v9.413L9.657,6.736a.785.785,0,0,1,.255-.176.763.763,0,0,1,.6,0,.785.785,0,0,1,.255.176A.816.816,0,0,1,10.94,7a.839.839,0,0,1,0,.623.816.816,0,0,1-.171.264L6.056,12.761a.784.784,0,0,1-.255.177.762.762,0,0,1-.6,0,.784.784,0,0,1-.255-.177L.23,7.887A.816.816,0,0,1,.06,7.623.839.839,0,0,1,.06,7,.816.816,0,0,1,.23,6.736.774.774,0,0,1,.787,6.5a.764.764,0,0,1,.3.062.785.785,0,0,1,.255.176l3.372,3.488V.812a.827.827,0,0,1,.23-.574A.773.773,0,0,1,5.5,0h0A.773.773,0,0,1,6.055.238Z"
+                fill="#fff"/>
+      
+        </symbol>
+        <symbol id="down-arrow" viewBox="0 0 12 7" fill="none">
+          <path d="M11 1L6 6L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </symbol>
+  <!--
+  <symbol id="wordmark" viewBox="0 0 206 26">
+  <path fill="currentColor"
+        d="M9.07953 19.9048C9.07953 22.7032 9.76817 23.3611 12.0402 23.3611C14.8036 23.3611 16.4791 21.8172 16.4791 17.7994C16.4791 13.6237 14.8343 12.2069 11.3823 12.2069C10.6893 12.2069 9.86905 12.242 9.07953 12.3078V19.9048ZM110.832 19.9048C110.832 22.7032 111.52 23.3611 113.792 23.3611C116.556 23.3611 118.231 21.8172 118.231 17.7994C118.231 13.6237 116.586 12.2069 113.134 12.2069C112.441 12.2069 111.621 12.242 110.832 12.3078V19.9048ZM86.4529 8.3558C85.1019 8.3558 83.8869 9.86905 83.6238 13.8167H89.0188C88.9531 9.27691 87.9004 8.3558 86.4529 8.3558ZM47.4723 8.3558C46.1214 8.3558 44.9064 9.86905 44.6432 13.8167H50.0383C49.9681 9.27691 48.9154 8.3558 47.4723 8.3558ZM149.746 23.6857C151.786 23.6857 153.133 21.9751 153.133 16.0186C153.133 10.062 151.786 8.35141 149.746 8.35141C147.707 8.35141 146.356 10.062 146.356 16.0186C146.356 21.9751 147.707 23.6857 149.746 23.6857ZM94.971 20.2645C92.9972 23.2603 90.3347 25.0016 86.5494 25.0016C81.4526 25.0016 77.8295 21.611 77.8295 16.2817C77.8295 11.084 81.7772 7.03554 86.6108 7.03554C91.3172 7.03554 94.6376 9.79887 94.6376 13.8123C94.6376 14.2728 94.6069 14.6983 94.5411 15.1282H83.558V15.558C83.558 20.1636 85.6327 22.5628 88.7206 22.5628C90.4312 22.5628 92.405 21.5452 94.085 19.5363L94.971 20.2645ZM55.9904 20.2645C54.0166 23.2603 51.3542 25.0016 47.5688 25.0016C42.472 25.0016 38.849 21.611 38.849 16.2817C38.849 11.084 42.7966 7.03554 47.6302 7.03554C52.3367 7.03554 55.6571 9.79887 55.6571 13.8123C55.6571 14.2728 55.6264 14.6983 55.5562 15.1282H44.5686V15.558C44.5686 20.1636 46.6433 22.5628 49.7312 22.5628C51.4419 22.5628 53.4157 21.5452 55.0956 19.5363L55.9904 20.2645ZM149.746 7.03992C154.843 7.03992 158.892 10.7595 158.892 16.023C158.892 21.2864 154.843 25.0016 149.746 25.0016C144.65 25.0016 140.601 21.2821 140.601 16.0186C140.601 10.7551 144.65 7.03992 149.746 7.03992ZM66.1577 24.6726H55.9597V23.6199C58.3283 23.3568 58.6222 23.0936 58.6222 20.3302V13.0271C58.6222 9.4085 58.3283 9.14532 55.9597 8.75056V7.69786L63.4602 7.03992C63.7585 7.00922 63.89 7.10572 63.89 7.36889V10.2638C65.2717 8.3558 67.2455 7.03992 69.4825 7.03992C72.7722 7.03992 75.1408 8.91285 75.1408 12.6675V20.3346C75.1408 23.098 75.3689 23.3611 77.7374 23.6243V24.677H67.5394V23.6243C69.6448 23.3611 69.8729 23.098 69.8729 20.3346V12.7947C69.8729 10.6542 68.9518 9.76817 67.4736 9.76817C66.3858 9.76817 65.105 10.3603 63.8857 11.5139V20.3302C63.8857 23.0936 64.0523 23.3568 66.1577 23.6199V24.6726ZM136.82 24.6726H125.306V23.6199C127.675 23.3568 127.938 23.0936 127.938 20.3302V13.0271C127.938 9.4085 127.675 9.14532 125.306 8.75056V7.69786L132.807 7.03992C133.07 7.00922 133.201 7.10572 133.201 7.36889V10.4612C134.583 8.29 136.127 7.03992 137.706 7.03992C139.452 7.03992 140.768 8.39089 140.768 10.2287C140.768 12.0052 139.583 13.2903 137.939 13.2903C136.395 13.2903 135.276 12.2025 135.276 10.7902C135.276 10.4919 135.307 10.2287 135.373 9.96555C134.618 10.3603 133.925 10.8867 133.201 11.6411V20.3259C133.201 23.0892 133.465 23.3524 136.82 23.6155V24.6726ZM167.05 8.48738C165.668 8.58388 165.44 9.01373 165.866 10.4612L168.401 18.9793L170.8 11.5753L170.309 10.1936C169.818 8.77688 169.585 8.61458 168.3 8.483V7.36889H177.117V8.48738C175.669 8.61897 175.437 9.07953 175.932 10.4612L178.928 18.9486L180.933 12.2376C181.722 9.67167 181.033 8.61897 178.367 8.48738V7.36889H185.867C187.512 7.36889 189.157 7.3031 190.802 7.14081L191.723 7.03992C191.986 7.00922 192.118 7.10572 192.118 7.36889V10.3296C193.499 8.39089 195.473 7.03992 197.745 7.03992C201.035 7.03992 203.373 8.91285 203.373 12.6675V20.3346C203.373 23.098 203.636 23.3611 206.004 23.6243V24.677H195.802V23.6243C197.907 23.3611 198.105 23.098 198.105 20.3346V12.7947C198.105 10.6542 197.184 9.76817 195.736 9.76817C194.618 9.76817 193.337 10.391 192.118 11.5139V20.3302C192.118 23.0936 192.315 23.3568 194.42 23.6199V24.6726H184.222V23.6199C186.591 23.3568 186.854 23.0936 186.854 20.3302V13.0271C186.854 9.24621 186.297 8.58827 185.113 8.58827C183.994 8.58827 182.972 9.70676 182.248 12.0446L178.336 24.677H175.375L171.393 13.3254L167.708 24.677H164.747L160.506 11.0884C159.782 8.78565 159.519 8.62336 157.743 8.49177V7.36889H167.055V8.48738H167.05ZM35.068 24.6726H23.5541V23.6199C25.9227 23.3568 26.1859 23.0936 26.1859 20.3302V13.0271C26.1859 9.4085 25.9227 9.14532 23.5541 8.75056V7.69786L31.0546 7.03992C31.3178 7.00922 31.4494 7.10572 31.4494 7.36889V10.4612C32.831 8.29 34.375 7.03992 35.9541 7.03992C37.6998 7.03992 39.0157 8.39089 39.0157 10.2287C39.0157 12.0052 37.8314 13.2903 36.1865 13.2903C34.6426 13.2903 33.5241 12.2025 33.5241 10.7902C33.5241 10.4919 33.5548 10.2287 33.625 9.96555C32.8661 10.3603 32.1775 10.8867 31.4538 11.6411V20.3259C31.4538 23.0892 31.7169 23.3524 35.0724 23.6155V24.6726H35.068ZM116.85 6.02231C116.85 2.69754 115.336 1.31587 112.476 1.31587C111.985 1.31587 111.454 1.34658 110.832 1.41676V10.7595H112.608C115.336 10.7551 116.85 9.17602 116.85 6.02231ZM15.1018 6.02231C15.1018 2.69754 13.5886 1.31587 10.7244 1.31587C10.2331 1.31587 9.70238 1.34658 9.07953 1.41676V10.7595H10.856C13.5886 10.7551 15.1018 9.17602 15.1018 6.02231ZM89.9093 3.97832L83.922 5.52667L83.5273 4.73714L88.1986 0.986905C88.7557 0.557053 89.3478 0.228085 89.9751 0.228085C90.997 0.228085 91.7822 0.951815 91.7822 2.03522C91.7822 2.96072 91.0584 3.68445 89.9093 3.97832ZM116.095 11.0533C121.587 11.4832 124.648 14.343 124.648 17.7336C124.648 22.2076 120.438 24.677 113.757 24.677H101.748V23.5541C104.809 23.2603 105.073 22.9971 105.073 19.5758V5.1012C105.073 1.67993 104.809 1.41676 101.748 1.11849V0H112.705C120.402 0 123.166 2.23698 123.166 5.65826C123.166 8.15842 120.929 10.3954 116.095 10.8867V11.0533ZM14.343 11.0533C19.8346 11.4832 22.8962 14.343 22.8962 17.7336C22.8962 22.2076 18.6854 24.677 12.0052 24.677H0V23.5541C3.0616 23.2603 3.32477 22.9971 3.32477 19.5758V5.1012C3.32477 1.67993 3.0616 1.41676 0 1.11849V0H10.9568C18.6547 0 21.418 2.23698 21.418 5.65826C21.418 8.15842 19.1811 10.3954 14.3474 10.8867V11.0533H14.343Z"/>
+  </symbol>
+  -->
+  <symbol id="chevron" viewbox="0 0 7 12">
+    <path d="M1 1L6 6L1 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="website" viewbox="0 0 30 30">
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+          d="M13.4776 24.8849C13.974 24.9606 14.4824 25 15 25C15.5176 25 16.026 24.9606 16.5224 24.8849C19.9355 24.3635 22.7809 22.1167 24.1404 19.0625C24.4059 18.466 24.6147 17.8388 24.76 17.1875C24.9171 16.4835 25 15.7514 25 15C25 14.2486 24.9171 13.5165 24.76 12.8125C24.6147 12.1613 24.4059 11.534 24.1404 10.9375C22.7809 7.8833 19.9355 5.63647 16.5224 5.11514C16.026 5.03932 15.5176 5 15 5C14.4824 5 13.974 5.03932 13.4776 5.11514C13.4776 5.11514 13.4776 5.11514 13.4776 5.11514C11.0832 5.48087 8.96818 6.69584 7.44958 8.44301C6.80351 9.18632 6.2654 10.0259 5.85965 10.9375C5.59414 11.534 5.3853 12.1613 5.23998 12.8125C5.08287 13.5165 5 14.2486 5 15C5 15.7514 5.08287 16.4835 5.23998 17.1875C5.3853 17.8388 5.59414 18.466 5.85965 19.0625C7.21915 22.1167 10.0645 24.3635 13.4776 24.8849ZM12.3832 22.6944C10.507 22.0565 8.93915 20.7518 7.96198 19.0625H10.8572C11.2103 20.3488 11.7268 21.5673 12.3832 22.6944ZM14.921 23.1246C14.0012 21.9147 13.2819 20.5443 12.8125 19.0625H17.1875C16.7181 20.5443 15.9988 21.9147 15.079 23.1246C15.0527 23.1249 15.0264 23.125 15 23.125C14.9736 23.125 14.9473 23.1249 14.921 23.1246ZM12.1875 15C12.1875 15.7449 12.2481 16.4756 12.3647 17.1875H17.6354C17.7519 16.4756 17.8125 15.7449 17.8125 15C17.8125 14.2551 17.7519 13.5244 17.6354 12.8125H12.3647C12.2481 13.5244 12.1875 14.2551 12.1875 15ZM17.6169 22.6944C18.2731 21.5673 18.7898 20.3488 19.1428 19.0625H22.038C21.0609 20.7518 19.493 22.0565 17.6169 22.6944ZM19.5324 17.1875H22.8271C23.0212 16.4915 23.125 15.7579 23.125 15C23.125 14.2421 23.0212 13.5085 22.8271 12.8125H19.5324C19.6346 13.527 19.6875 14.2573 19.6875 15C19.6875 15.7427 19.6346 16.473 19.5324 17.1875ZM7.17286 17.1875H10.4676C10.3654 16.473 10.3125 15.7427 10.3125 15C10.3125 14.2573 10.3654 13.527 10.4676 12.8125H7.17286C6.97876 13.5085 6.875 14.2421 6.875 15C6.875 15.7579 6.97876 16.4915 7.17286 17.1875ZM10.8572 10.9375H7.96198C8.93915 9.24825 10.507 7.94348 12.3832 7.3056C11.7268 8.43273 11.2103 9.65127 10.8572 10.9375ZM12.8125 10.9375C13.2819 9.45579 14.0012 8.08525 14.921 6.87538C14.9473 6.87513 14.9736 6.875 15 6.875C15.0264 6.875 15.0527 6.87513 15.079 6.87538C15.9988 8.08525 16.7181 9.45579 17.1875 10.9375H12.8125ZM22.038 10.9375H19.1428C18.7898 9.65127 18.2731 8.43273 17.6169 7.3056C19.493 7.94348 21.0609 9.24825 22.038 10.9375Z"/>
+  </symbol>
+
+  <symbol id="facebook" viewBox="0 0 30 30">
+    <path fill="currentColor"
+          d="M12.75,12 L10.5,12 L10.5,15 L12.75,15 L12.75,24 L16.5,24 L16.5,15 L19.2315,15 L19.5,12 L16.5,12 L16.5,10.74975 C16.5,10.0335 16.644,9.75 17.33625,9.75 L19.5,9.75 L19.5,6 L16.644,6 C13.947,6 12.75,7.18725 12.75,9.46125 L12.75,12 Z"/>
+  </symbol>
+
+  <symbol id="instagram" viewBox="0 0 30 30">
+    <path fill="currentColor"
+          d="M15,4.5 C12.1475,4.5 11.791375,4.513125 10.671375,4.563 C9.553125,4.6155 8.791875,4.791375 8.1225,5.05125 C7.432125,5.319 6.845875,5.678625 6.26225,6.26225 C5.678625,6.845875 5.318125,7.43125 5.05125,8.1225 C4.791375,8.791875 4.614625,9.553125 4.563,10.671375 C4.5105,11.791375 4.5,12.1475 4.5,15 C4.5,17.8525 4.513125,18.208625 4.563,19.328625 C4.6155,20.446 4.791375,21.208125 5.05125,21.8775 C5.319,22.567 5.678625,23.154125 6.26225,23.73775 C6.845875,24.3205 7.43125,24.681875 8.1225,24.94875 C8.79275,25.20775 9.554,25.385375 10.671375,25.437 C11.791375,25.4895 12.1475,25.5 15,25.5 C17.8525,25.5 18.208625,25.486875 19.328625,25.437 C20.446,25.3845 21.208125,25.20775 21.8775,24.94875 C22.567,24.681 23.154125,24.3205 23.73775,23.73775 C24.3205,23.154125 24.681875,22.569625 24.94875,21.8775 C25.20775,21.208125 25.385375,20.446 25.437,19.328625 C25.4895,18.208625 25.5,17.8525 25.5,15 C25.5,12.1475 25.486875,11.791375 25.437,10.671375 C25.3845,9.554 25.20775,8.791 24.94875,8.1225 C24.681,7.432125 24.3205,6.845875 23.73775,6.26225 C23.154125,5.678625 22.569625,5.318125 21.8775,5.05125 C21.208125,4.791375 20.446,4.614625 19.328625,4.563 C18.208625,4.5105 17.8525,4.5 15,4.5 Z M15,6.39 C17.802625,6.39 18.136875,6.404 19.24375,6.452125 C20.2675,6.50025 20.823125,6.67 21.192375,6.81525 C21.684125,7.005125 22.032375,7.232625 22.401625,7.59925 C22.76825,7.96675 22.99575,8.315875 23.185625,8.807625 C23.329125,9.176875 23.500625,9.7325 23.547,10.75625 C23.596875,11.864 23.60825,12.1965 23.60825,15 C23.60825,17.8035 23.595125,18.136875 23.5435,19.24375 C23.490125,20.2675 23.3195,20.823125 23.175125,21.192375 C22.979125,21.684125 22.756,22.032375 22.3885,22.401625 C22.021875,22.76825 21.6675,22.99575 21.181,23.185625 C20.8135,23.329125 20.249125,23.500625 19.225375,23.547 C18.110625,23.596875 17.7825,23.60825 14.97375,23.60825 C12.164125,23.60825 11.836,23.595125 10.722125,23.5435 C9.6975,23.490125 9.133125,23.3195 8.765625,23.175125 C8.26775,22.979125 7.925625,22.756 7.559,22.3885 C7.190625,22.021875 6.95525,21.6675 6.7715,21.181 C6.627125,20.8135 6.457375,20.249125 6.404,19.225375 C6.364625,18.122875 6.350625,17.7825 6.350625,14.986875 C6.350625,12.190375 6.364625,11.849125 6.404,10.7335 C6.457375,9.70975 6.627125,9.14625 6.7715,8.77875 C6.95525,8.28 7.190625,7.93875 7.559,7.570375 C7.925625,7.20375 8.26775,6.9675 8.765625,6.784625 C9.133125,6.639375 9.68525,6.46875 10.709,6.41625 C11.824625,6.376875 12.15275,6.36375 14.960625,6.36375 L15,6.39 L15,6.39 Z M15,9.60825 C12.020625,9.60825 9.60825,12.02325 9.60825,15 C9.60825,17.979375 12.02325,20.39175 15,20.39175 C17.979375,20.39175 20.39175,17.97675 20.39175,15 C20.39175,12.020625 17.97675,9.60825 15,9.60825 Z M15,18.5 C13.06625,18.5 11.5,16.93375 11.5,15 C11.5,13.06625 13.06625,11.5 15,11.5 C16.93375,11.5 18.5,13.06625 18.5,15 C18.5,16.93375 16.93375,18.5 15,18.5 Z M21.86525,9.395625 C21.86525,10.09125 21.3,10.655625 20.60525,10.655625 C19.909625,10.655625 19.34525,10.090375 19.34525,9.395625 C19.34525,8.700875 19.9105,8.13649899 20.60525,8.13649899 C21.299125,8.135625 21.86525,8.700875 21.86525,9.395625 Z"/>
+  </symbol>
+
+  <symbol id="linkedin" viewBox="0 0 30 30">
+    <path fill="currentColor"
+          d="M23.6375751,22.75 L20.0622266,22.75 L20.0622266,17.1475477 C20.0622266,15.8115705 20.0350644,14.0923048 18.1991019,14.0923048 C16.3349711,14.0923048 16.0502712,15.5459847 16.0502712,17.048959 L16.0502712,22.75 L12.4749227,22.75 L12.4749227,11.2292092 L15.9094302,11.2292092 L15.9094302,12.7995859 L15.9557065,12.7995859 C16.4355718,11.8941797 17.6025398,10.9384732 19.3459497,10.9384732 C22.9685805,10.9384732 23.6385811,13.3227095 23.6385811,16.4262407 L23.6385811,22.75 L23.6375751,22.75 Z M8.4368111,9.65279641 C7.28593923,9.65279641 6.36141891,8.72123404 6.36141891,7.5753922 C6.36141891,6.43055637 7.28694524,5.5 8.4368111,5.5 C9.58365895,5.5 10.5132093,6.43055637 10.5132093,7.5753922 C10.5132093,8.72123404 9.58265294,9.65279641 8.4368111,9.65279641 Z M10.2295154,22.75 L6.64410684,22.75 L6.64410684,11.2292092 L10.2295154,11.2292092 L10.2295154,22.75 Z"/>
+  </symbol>
+
+  <symbol id="twitter" viewBox="0 0 30 30">
+    <path fill="currentColor"
+          d="M25.3044801,9.0053673 C24.5785869,9.32443226 23.8034805,9.54179013 22.9873632,9.64103655 C23.8190647,9.13988312 24.458835,8.35001282 24.7614956,7.40758189 C23.9814679,7.8628031 23.1169577,8.19417132 22.1966727,8.37872046 C21.461757,7.59213103 20.4143381,7.1 19.2512685,7.1 C17.0227351,7.1 15.215794,8.9069411 15.215794,11.1330138 C15.215794,11.452899 15.2527039,11.7604809 15.3199618,12.0549393 C11.9652686,11.8966371 8.99197695,10.2857282 7.00212715,7.85049982 C6.6518939,8.44269749 6.45586171,9.13086072 6.45586171,9.88054032 C6.45586171,11.2831138 7.1694517,12.515902 8.25049953,13.2401548 C7.58858329,13.2188291 6.96603754,13.0367407 6.42305297,12.7349003 L6.42305297,12.7849336 C6.42305297,14.7411545 7.81168269,16.3725688 9.65963471,16.7441277 C9.32088452,16.835172 8.9632693,16.8843851 8.59663169,16.8843851 C8.33908311,16.8843851 8.09219738,16.8597785 7.84531165,16.8138463 C8.36286945,18.4157328 9.85074559,19.5837238 11.6215971,19.6165325 C10.2436302,20.6984006 8.49738526,21.3430922 6.61662451,21.3430922 C6.29673934,21.3430922 5.97767439,21.3242272 5.656969,21.2881376 C7.45242704,22.431522 9.56777025,23.1 11.8553593,23.1 C19.2816166,23.1 23.3375965,16.951643 23.3375965,11.6284257 C23.3375965,11.4570001 23.3375965,11.283934 23.3252932,11.1116881 C24.1135231,10.5465576 24.8016863,9.83214743 25.3430304,9.02177167 L25.3044801,9.0053673 Z"/>
+  </symbol>
+
+  <symbol id="spotify" viewBox="0 0 30 30">
+    <path fill="currentColor"
+          d="M20.9 13.9C17.7 12 12.35 11.8 9.3 12.75C8.8 12.9 8.3 12.6 8.15 12.15C8 11.65 8.3 11.15 8.75 11C12.3 9.95 18.15 10.15 21.85 12.35C22.3 12.6 22.45 13.2 22.2 13.65C21.95 14 21.35 14.15 20.9 13.9ZM20.8 16.7C20.55 17.05 20.1 17.2 19.75 16.95C17.05 15.3 12.95 14.8 9.8 15.8C9.4 15.9 8.95 15.7 8.85 15.3C8.75 14.9 8.95 14.45 9.35 14.35C13 13.25 17.5 13.8 20.6 15.7C20.9 15.85 21.05 16.35 20.8 16.7ZM19.6 19.45C19.4 19.75 19.05 19.85 18.75 19.65C16.4 18.2 13.45 17.9 9.95 18.7C9.6 18.8 9.3 18.55 9.2 18.25C9.1 17.9 9.35 17.6 9.65 17.5C13.45 16.65 16.75 17 19.35 18.6C19.7 18.75 19.75 19.15 19.6 19.45ZM15 5C9.5 5 5 9.5 5 15C5 20.5 9.5 25 15 25C20.5 25 25 20.5 25 15C25 9.5 20.55 5 15 5Z"/>
+  </symbol>
+
+  <symbol id="pinterest" viewBox="0 0 30 30">
+    <path fill="currentColor"
+          d="M15 5C9.4775 5 5 9.4775 5 15C5 19.2367 7.63583 22.855 11.3558 24.3117C11.2683 23.5208 11.1892 22.3067 11.3908 21.4433C11.5725 20.6633 12.5633 16.4725 12.5633 16.4725C12.5633 16.4725 12.2642 15.8733 12.2642 14.9883C12.2642 13.5975 13.07 12.56 14.0733 12.56C14.9267 12.56 15.3383 13.2008 15.3383 13.9683C15.3383 14.8267 14.7925 16.1092 14.51 17.2975C14.2742 18.2933 15.0092 19.105 15.9908 19.105C17.7683 19.105 19.1342 17.2308 19.1342 14.5258C19.1342 12.1317 17.4142 10.4575 14.9575 10.4575C12.1125 10.4575 10.4425 12.5917 10.4425 14.7975C10.4425 15.6567 10.7733 16.5783 11.1867 17.08C11.2683 17.1792 11.28 17.2658 11.2558 17.3667C11.18 17.6825 11.0117 18.3617 10.9783 18.5008C10.935 18.6842 10.8333 18.7225 10.6442 18.6342C9.395 18.0525 8.61417 16.2267 8.61417 14.76C8.61417 11.6058 10.9058 8.70833 15.2217 8.70833C18.6908 8.70833 21.3867 11.18 21.3867 14.4842C21.3867 17.9308 19.2133 20.7042 16.1975 20.7042C15.1842 20.7042 14.2317 20.1775 13.9058 19.5558C13.9058 19.5558 13.4042 21.465 13.2825 21.9333C13.0567 22.8017 12.4475 23.8908 12.0392 24.555C12.975 24.8433 13.9692 25 15 25C20.5225 25 25 20.5225 25 15C25 9.4775 20.5225 5 15 5Z"/>
+  </symbol>
+
+  <symbol id="close" viewBox="0 0 14 14">
+    <path fill="currentColor"
+          d="M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z"/>
+  </symbol>
+
+  <symbol id="caret" viewBox="0 0 10 6">
+    <path fill="currentColor"
+          d="M9.70711 0.292893C10.0976 0.683418 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976315 1.31658 -0.0976315 0.683417 0.292893 0.292893C0.683417 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976312 9.31658 -0.0976311 9.70711 0.292893Z"/>
+  </symbol>
+
+  <symbol viewBox="0 0 32 32" id="tiktok">
+    <path fill="currentColor"
+          d="M16.708 0.027c1.745-0.027 3.48-0.011 5.213-0.027 0.105 2.041 0.839 4.12 2.333 5.563 1.491 1.479 3.6 2.156 5.652 2.385v5.369c-1.923-0.063-3.855-0.463-5.6-1.291-0.76-0.344-1.468-0.787-2.161-1.24-0.009 3.896 0.016 7.787-0.025 11.667-0.104 1.864-0.719 3.719-1.803 5.255-1.744 2.557-4.771 4.224-7.88 4.276-1.907 0.109-3.812-0.411-5.437-1.369-2.693-1.588-4.588-4.495-4.864-7.615-0.032-0.667-0.043-1.333-0.016-1.984 0.24-2.537 1.495-4.964 3.443-6.615 2.208-1.923 5.301-2.839 8.197-2.297 0.027 1.975-0.052 3.948-0.052 5.923-1.323-0.428-2.869-0.308-4.025 0.495-0.844 0.547-1.485 1.385-1.819 2.333-0.276 0.676-0.197 1.427-0.181 2.145 0.317 2.188 2.421 4.027 4.667 3.828 1.489-0.016 2.916-0.88 3.692-2.145 0.251-0.443 0.532-0.896 0.547-1.417 0.131-2.385 0.079-4.76 0.095-7.145 0.011-5.375-0.016-10.735 0.025-16.093z"/>
+  </symbol>
+  <symbol viewBox="0 0 50 50" id="youtube">
+    <path fill="currentColor"
+          d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"/>
+  </symbol>
+  </defs>
+</svg>
+
+    
+<nav class="site-nav  js-site-nav" aria-label="Primary">
+  <div class="site-nav__top-level">
+    <div class="site-nav__main">
+      <div class="site-nav__logo" style="font-family: 'Playfair Display', serif;">
+        <a href="{% url 'index' %}" >Cihan Buğdaycı</a>
+      </div>
+
+      <ul class="site-nav-list" role="tablist">
+                  <li class="site-nav__item js-nav-item">
+                    <a
+                    id="nav-books"
+                    class=" site-nav__link"
+                    href="/kitaplar"
+                    data-dropdown="books"
+                    aria-controls="dropdown-books"
+                    
+                  >
+                    Kitaplar
+                  </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-books"
+  class="site-nav-dropdown site-nav-dropdown--books"
+  aria-labelledby="nav-books"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Kitaplar</h2>
+    <p class="site-nav-dropdown__description"></p>
+    <a href="/kitaplar" class="site-nav-dropdown__archive-link">Tüm Kitaplar</a>
+  </div>
+
+    <ul class="nav-tease-books">
+                <li class="nav-tease-books__item">
+        <a href="/kitaplar/secilmishuzursuzluk" class="nav-tease-books__item-link">
+
+                      <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+              
+<div class="book-cover-wrapper">
+    <figure  onclick=""             class="book-cover redirect   ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="/static/images/secilmishuzursuzluk.jpg 1331w, /static/images/secilmishuzursuzluk.jpg 215w, /static/images/secilmishuzursuzluk.jpg 733w, /static/images/secilmishuzursuzluk.jpg 768w, /static/images/secilmishuzursuzluk.jpg 1099w"
+     data-src="/static/images/secilmishuzursuzluk.jpg"
+     data-sizes="auto"
+     alt="Seçilmiş Huzursuzluk"
+/>
+
+            </figure>
+</div>
+            </div>
+            <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+              
+<div class="book-cover-wrapper">
+    <figure  onclick=""             class="book-cover redirect book-cover--even-spacing  ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %} 1331w, {% static 'images/secilmishuzursuzluk.jpg' %} 215w, {% static 'images/secilmishuzursuzluk.jpg' %} 733w, {% static 'images/secilmishuzursuzluk.jpg' %} 768w, {% static 'images/secilmishuzursuzluk.jpg' %} 1099w"
+     data-src="{% static 'images/secilmishuzursuzluk.jpg' %}"
+     data-sizes="auto"
+     alt="Seçilmiş Huzursuzluk"
+/>
+
+            </figure>
+</div>
+            </div>
+          
+          <div class="nav-tease-books__item-text">
+            <h3 class="nav-tease-books__item-title">Seçilmiş Huzursuzluk</h3>
+
+                          <p class="nav-tease-books__item-subtitle">İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+                      </div>
+        </a>
+      </li>
+                <li class="nav-tease-books__item">
+        <a href="/kitaplar/varligiminkabuledildigigun" class="nav-tease-books__item-link">
+
+                      <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+              
+<div class="book-cover-wrapper">
+    <figure  onclick=""             class="book-cover redirect   ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %} 215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+     data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+     data-sizes="auto"
+     alt="Varlığımın Kabul Edildiği Gün"
+/>
+
+            </figure>
+</div>
+            </div>
+            <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+              
+<div class="book-cover-wrapper">
+    <figure             class="book-cover redirect book-cover--even-spacing  ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %} 215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+     data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+     data-sizes="auto"
+     alt=""
+/>
+
+            </figure>
+</div>
+            </div>
+          
+          <div class="nav-tease-books__item-text">
+            <h3 class="nav-tease-books__item-title">Varlığımın Kabul Edildiği Gün</h3>
+
+                          <p class="nav-tease-books__item-subtitle">Kör, sağır ve dilsiz çocukların hayata tutunma mücadelesi.</p>
+                      </div>
+        </a>
+      </li>
+      </ul>
+
+</div>
+            </div>
+          </li>
+
+
+<!--Podcastler Navbar Başlangıç-->
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-podcasts"
+              class=" site-nav__link"
+              href="/podcast"
+              data-dropdown="podcasts"
+              aria-controls="dropdown-podcasts"
+            >
+              Podcastler
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-podcasts"
+  class="site-nav-dropdown site-nav-dropdown--podcasts"
+  aria-labelledby="nav-podcasts"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Podcastler</h2>
+    <p class="site-nav-dropdown__description"></p>
+    <a href="/podcast" class="site-nav-dropdown__archive-link">Tüm Podcastler</a>
+  </div>
+
+    <ul class="nav-tease-podcasts">
+                <li class="nav-tease-podcasts__item">
+        <a href="/podcast" class="nav-tease-podcasts__item-link">
+          <div class="nav-tease-podcasts__item-content">
+            <h3 class="nav-tease-podcasts__item-title">Bencesi Podcast</h3>
+
+                          <p class="nav-tease-podcasts__item-subtitle">Bencesi</p>
+                      </div>
+
+                      
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-podcasts__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="{% static 'images/bencesi.png' %} 870w, {% static 'images/bencesi.png' %} 300w, {% static 'images/bencesi.png' %} 150w, {% static 'images/bencesi.png' %} 768w"
+      data-src="/static/images/bencesi.png"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                  </a>
+      </li>
+
+
+
+      <li class="nav-tease-podcasts__item">
+        <a href="/podcast" class="nav-tease-podcasts__item-link">
+          <div class="nav-tease-podcasts__item-content">
+            <h3 class="nav-tease-podcasts__item-title">İçimdeki Doğaçlama</h3>
+
+                          <p class="nav-tease-podcasts__item-subtitle"></p>
+                      </div>
+
+                      
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-podcasts__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="{% static 'images/icimdekidogaclama.png' %} 870w, {% static 'images/icimdekidogaclama.png' %} 300w, {% static 'images/icimdekidogaclama.png' %} 150w, {% static 'images/icimdekidogaclama.png' %} 768w"
+      data-src="{% static 'images/icimdekidogaclama.png' %}"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                  </a>
+      </li>
+
+
+ 
+                
+      </ul>
+
+<!--
+      <div class="nav-tease-links">
+        <h3 class="nav-tease-links__title">More</h3>
+        <ul class="nav-tease-links__items">
+          
+                              
+            <li class="nav-tease-links__item">
+              <a href="">
+                Podcast Inquiries
+              </a>
+            </li>
+          
+          
+        </ul>
+      </div>
+-->
+
+</div>
+            </div>
+          </li>
+
+<!--Podcastler Navbar Bitiş-->
+
+
+
+<!--Projeler Navbar Başlangıç-->
+<li class="site-nav__item js-nav-item">
+  <a
+    id="nav-podcasts"
+    class=" site-nav__link"
+    href="{% url 'projeler' %}"
+    data-dropdown="podcasts"
+    aria-controls="dropdown-podcasts"
+  >
+    Projeler
+  </a>
+  <div class="site-nav__dropdown-container">
+    <div
+id="dropdown-podcasts"
+class="site-nav-dropdown site-nav-dropdown--podcasts"
+aria-labelledby="nav-podcasts"
+>
+<div class="site-nav-dropdown__intro">
+<h2 class="site-nav-dropdown__title">Projeler</h2>
+<p class="site-nav-dropdown__description"></p>
+<a href="{% url 'projeler' %}" class="site-nav-dropdown__archive-link">Tüm Projeler</a>
+</div>
+
+<ul class="nav-tease-podcasts">
+      <li class="nav-tease-podcasts__item">
+<a href="{% url 'projeler' %}" class="nav-tease-podcasts__item-link">
+<div class="nav-tease-podcasts__item-content">
+  <h3 class="nav-tease-podcasts__item-title">Kolektif Future</h3>
+
+                <p class="nav-tease-podcasts__item-subtitle">Kolektif Future</p>
+            </div>
+
+            
+
+
+
+
+<div class="lazy-img__mod nav-tease-podcasts__item-image">
+<span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+<img class="lazy-img lazyload "
+data-srcset="{% static 'images/toplu.jpeg' %} 870w, {% static 'images/toplu.jpeg' %} 300w, {% static 'images/toplu.jpeg' %} 150w, {% static 'images/toplu.jpeg' %} 768w"
+data-src="{% static 'images/toplu.jpeg' %}"
+data-sizes="auto"
+alt=""
+data-caption=""
+data-credit=""
+>
+</div>
+
+        </a>
+</li>
+
+
+
+<li class="nav-tease-podcasts__item">
+<a href="{% url 'projeler' %}" class="nav-tease-podcasts__item-link">
+<div class="nav-tease-podcasts__item-content">
+  <h3 class="nav-tease-podcasts__item-title">Momlala</h3>
+
+                <p class="nav-tease-podcasts__item-subtitle"></p>
+            </div>
+
+            
+
+
+
+
+<div class="lazy-img__mod nav-tease-podcasts__item-image">
+<span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+<img class="lazy-img lazyload "
+data-srcset="{% static 'images/momlala2.jpg' %} 870w, {% static 'images/momlala2.jpg' %} 300w, {% static 'images/momlala2.jpg' %} 150w, {% static 'images/momlala2.jpg' %} 768w"
+data-src="{% static 'images/momlala2.jpg' %}"
+data-sizes="auto"
+alt=""
+data-caption=""
+data-credit=""
+>
+</div>
+
+        </a>
+</li>
+
+
+
+      
+</ul>
+
+<!--
+<div class="nav-tease-links">
+<h3 class="nav-tease-links__title">More</h3>
+<ul class="nav-tease-links__items">
+
+                    
+  <li class="nav-tease-links__item">
+    <a href="">
+      Podcast Inquiries
+    </a>
+  </li>
+
+
+</ul>
+</div>
+-->
+
+</div>
+  </div>
+</li>
+<!--Projeler Navbar Bitiş-->
+
+
+<!--Yazılar Navbar Başlangıç-->
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-hubs"
+              class=" site-nav__link"
+              href="/makaleler"
+              data-dropdown="hubs"
+              aria-controls="dropdown-hubs"
+            >
+              Yazılar
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-hubs"
+  class="site-nav-dropdown site-nav-dropdown--hubs"
+  aria-labelledby="nav-hubs"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Yazılar</h2>
+    <p class="site-nav-dropdown__description"></p>
+  </div>
+
+      <ul class="nav-tease-hubs">
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">İnsana Uzanan Yol</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.222222222222%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/insanauzananyol.jpeg 900w, /static/images/insanauzananyol.jpeg 300w, /static/images/insanauzananyol.jpeg 768w"
+      data-src="/static/images/insanauzananyol.jpeg"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Günün Sonunda Kim Başarılı Olacak ?</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/gununsonunda.jpeg 2280w, /static/images/gununsonunda.jpeg 300w, /static/images/gununsonunda.jpeg 1024w, /static/images/gununsonunda.jpeg 768w, /static/images/gununsonunda.jpeg 1536w, /static/images/gununsonunda.jpeg 2048w"
+      data-src="/static/images/gununsonunda.jpeg"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Beceri Toplumundan Varoluş Toplumuna</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/beceritoplumundan.jpeg 2280w, /static/images/beceritoplumundan.jpeg 300w, /static/images/beceritoplumundan.jpeg 1024w, /static/images/beceritoplumundan.jpeg 768w, /static/images/beceritoplumundan.jpeg 1536w, /static/images/beceritoplumundan.jpeg 2048w"
+      data-src="/static/images/beceritoplumundan.jpeg"
+      data-sizes="auto"
+      alt="Beceri Toplumundan Varoluş Toplumuna"
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Şirketler Kendi Mezunlarını Yetiştirirse</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/sirketlerkendimezun.jpeg 2280w, /static/images/sirketlerkendimezun.jpeg 300w, /static/images/sirketlerkendimezun.jpeg 1024w, /static/images/sirketlerkendimezun.jpeg 768w, /static/images/sirketlerkendimezun.jpeg 1536w, /static/images/sirketlerkendimezun.jpeg 2048w"
+      data-src="/static/images/sirketlerkendimezun.jpeg"
+      data-sizes="auto"
+      alt="Şirketler Kendi Mezunlarını Yetiştirirse"
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+            </ul>
+
+
+  </div>
+            </div>
+          </li>
+
+
+<!-- Mentörlük Navbar Başlangıç -->
+          <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-explore"
+              class=" site-nav__link"
+              href="{% url 'mentorluk1' %}"
+              data-dropdown="explore"
+              aria-controls="dropdown-explore"
+            >
+              Mentörlük
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+        id="dropdown-explore"
+        class="site-nav-dropdown site-nav-dropdown--explore"
+        aria-labelledby="nav-explore"
+        >
+        <div class="site-nav-dropdown__intro">
+        <h2 class="site-nav-dropdown__title">Mentörlük</h2>
+        <p class="site-nav-dropdown__description"></p>
+        </div>
+        
+        
+        <div class="nav-tease-links">
+        <h3 class="nav-tease-links__title">Mentörlük</h3>
+        <ul class="nav-tease-links__items">
+          <li class="nav-tease-links__item">
+        <a href="{% url 'mentorluk1' %}">
+          Mentörlük Hizmeti
+        </a>
+        </li>
+          
+          
+        </ul>
+        </div>
+        
+        
+        
+        
+        
+        <div class="nav-tease-links">
+        <h3 class="nav-tease-links__title">İletişim</h3>
+        <ul class="nav-tease-links__items">
+                    <li class="nav-tease-links__item">
+                <a href="/iletisim">
+                    Daha Fazlasını Öğrenmek İçin Bizimle İletişime Geçebilirsiniz
+                </a>
+            </li>
+                    
+            </ul>
+        </div>
+        
+        </div>
+            </div>
+          </li>
+<!-- Mentörlük Navbar Bitiş -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Hakkında Navbar Başlangıç -->
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-about"
+              class=" site-nav__link"
+              href="/hakkimda"
+              data-dropdown="about"
+              aria-controls="dropdown-about"
+            >
+              Hakkında
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-about"
+  class="site-nav-dropdown site-nav-dropdown--about"
+  aria-labelledby="nav-about"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Hakkında</h2>
+    <p class="site-nav-dropdown__description"></p>
+  </div>
+
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Keşfet</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/hakkimda">
+            Hakkında
+          </a>
+        </li>
+      
+
+    </ul>
+
+    
+  </div>
+  <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">İletişim</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/iletisim">
+            Bizimle İletişime Geç
+          </a>
+        </li>
+      
+
+    </ul>
+
+    
+  </div>
+<!-- Hakkında Navbar Bitiş -->
+
+  
+
+  
+</div>
+            </div>
+          </li>
+
+
+
+          
+                  
+              </ul>
+
+      <div class="site-nav__buttons">
+        <div class="site-nav__button site-nav__search-trigger">
+          <a href="" class="site-nav__link--search">
+            <svg>
+              <use href="" />
+            </svg><span class="visually-hidden">Search</span>
+          </a>
+        </div>
+
+        <ul class="social-list">
+          <li class="social-list__item">
+        <a class="social-list__link facebook"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Facebook&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://www.facebook.com/people/Cihan-Bu%C4%9Fdayc%C4%B1/100064091290311/">
+        <svg aria-hidden="true">
+        <use href="#facebook"/>
+        </svg>
+        <span class="visually-hidden">facebook</span>
+        </a>
+        </li>
+        <li class="social-list__item">
+        <a class="social-list__link twitter"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Twitter&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://twitter.com/cihanbugdaycii?lang=en">
+        <svg aria-hidden="true">
+        <use href="#twitter"/>
+        </svg>
+        <span class="visually-hidden">twitter</span>
+        </a>
+        </li>
+        <li class="social-list__item">
+        <a class="social-list__link instagram"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Instagram&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://www.instagram.com/cihan.bugdaycii/?hl=en">
+        <svg aria-hidden="true">
+        <use href="#instagram"/>
+        </svg>
+        <span class="visually-hidden">instagram</span>
+        </a>
+        </li>
+        <li class="social-list__item">
+        <a class="social-list__link linkedin"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Linkedin&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://www.linkedin.com/in/cihanbugdayci/">
+        <svg aria-hidden="true">
+        <use href="#linkedin"/>
+        </svg>
+        <span class="visually-hidden">linkedin</span>
+        </a>
+        </li>
+        
+        </ul>
+        <button class="site-nav__button site-nav__menu-trigger js--menu-toggle " aria-controls="menu">
+          <div class="site-nav__menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="visually-hidden">Toggle Menu</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+      </div>
+</nav>
+    <nav
+  id="menu"
+  class="menu js--menu"
+  aria-hidden="true"
+  aria-modal="true"
+  role="dialog"
+  tabindex="0"
+>
+  
+<nav class="site-nav site-nav--in-menu js-site-nav" aria-label="Primary">
+  <div class="site-nav__top-level">
+    <div class="site-nav__main">
+      <div class="site-nav__logo" style="font-family: 'Playfair Display', serif;">
+        <a href="/" class="site-nav__link--logo">
+          <svg viewbox="0 0 206 26" aria-hidden="true">
+            <use href=""/>
+          </svg>
+          <span class="">Cihan Buğdaycı</span>
+        </a>
+      </div>
+
+      <ul class="site-nav-list" role="tablist">
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-books"
+              class=" site-nav__link"
+              href="/kitaplar"
+              data-dropdown="books"
+              aria-controls="dropdown-books"
+              
+            >
+              Kitaplar
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-books"
+  class="site-nav-dropdown site-nav-dropdown--books"
+  aria-labelledby="nav-books"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Kitaplar</h2>
+    <p class="site-nav-dropdown__description"></p>
+    <a href="/kitaplar" class="site-nav-dropdown__archive-link">Kitapları İncele</a>
+  </div>
+
+    <ul class="nav-tease-books">
+                <li class="nav-tease-books__item">
+        <a href="/kitaplar/secilmishuzursuzluk" class="nav-tease-books__item-link">
+
+                      <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+              
+<div class="book-cover-wrapper">
+    <figure  onclick=""             class="book-cover redirect   ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="/static/images/secilmishuzursuzluk.jpg 1331w, /static/images/secilmishuzursuzluk.jpg  215w, /static/images/secilmishuzursuzluk.jpg  733w, /static/images/secilmishuzursuzluk.jpg  768w,/static/images/secilmishuzursuzluk.jpg  1099w"
+     data-src="/static/images/secilmishuzursuzluk.jpg "
+     data-sizes="auto"
+     alt="selam"
+/>
+
+            </figure>
+</div>
+            </div>
+            <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+              
+<div class="book-cover-wrapper">
+    <figure  onclick=""             class="book-cover redirect book-cover--even-spacing  ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="/static/images/secilmishuzursuzluk.jpg  1331w, /static/images/secilmishuzursuzluk.jpg  215w,/static/images/secilmishuzursuzluk.jpg  733w, /static/images/secilmishuzursuzluk.jpg  768w, /static/images/secilmishuzursuzluk.jpg  1099w"
+     data-src="/static/images/secilmishuzursuzluk.jpg "
+     data-sizes="auto"
+     alt=""
+/>
+
+            </figure>
+</div>
+            </div>
+          
+          <div class="nav-tease-books__item-text">
+            <h3 class="nav-tease-books__item-title">Seçilmiş Huzursuzluk</h3>
+
+                          <p class="nav-tease-books__item-subtitle">İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+                      </div>
+        </a>
+      </li>
+                <li class="nav-tease-books__item">
+        <a href="/kitaplar/varligiminkabuledildigigun" class="nav-tease-books__item-link">
+
+                      <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+              
+<div class="book-cover-wrapper">
+    <figure  onclick=""             class="book-cover redirect   ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="/static/images/varligiminkabuledildigigun.jpg 1331w, /static/images/varligiminkabuledildigigun.jpg 215w, /static/images/varligiminkabuledildigigun.jpg 733w, /static/images/varligiminkabuledildigigun.jpg 768w, /static/images/varligiminkabuledildigigun.jpg 1099w"
+     data-src="/static/images/varligiminkabuledildigigun.jpg"
+     data-sizes="auto"
+     alt=""
+/>
+
+            </figure>
+</div>
+            </div>
+            <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+              
+<div class="book-cover-wrapper">
+    <figure  onclick=""             class="book-cover redirect book-cover--even-spacing  ">
+
+                    
+<img class="book-cover__cover lazyload js-modal-gallery__hidden"
+     data-srcset="/static/images/varligiminkabuledildigigun.jpg 1331w, /static/images/varligiminkabuledildigigun.jpg 215w, /static/images/varligiminkabuledildigigun.jpg 733w, /static/images/varligiminkabuledildigigun.jpg 768w, /static/images/varligiminkabuledildigigun.jpg 1099w"
+     data-src="/static/images/varligiminkabuledildigigun.jpg"
+     data-sizes="auto"
+     alt=""
+/>
+
+            </figure>
+</div>
+            </div>
+          
+          <div class="nav-tease-books__item-text">
+            <h3 class="nav-tease-books__item-title">Varlığımın Kabul Edildiği Gün</h3>
+
+                          <p class="nav-tease-books__item-subtitle">Kör, sağır ve dilsiz çocukların hayata tutunma mücadelesi.</p>
+                      </div>
+        </a>
+      </li>
+                
+      </ul>
+
+</div>
+            </div>
+          </li>
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-podcasts"
+              class=" site-nav__link"
+              href="/podcast"
+              data-dropdown="podcasts"
+              aria-controls="dropdown-podcasts"
+            >
+              Podcastler
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-podcasts"
+  class="site-nav-dropdown site-nav-dropdown--podcasts"
+  aria-labelledby="nav-podcasts"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Podcastler</h2>
+    <p class="site-nav-dropdown__description"></p>
+    
+  </div>
+
+    <ul class="nav-tease-podcasts">
+                <li class="nav-tease-podcasts__item">
+        <a href="/podcast/" class="nav-tease-podcasts__item-link">
+          <div class="nav-tease-podcasts__item-content">
+            <h3 class="nav-tease-podcasts__item-title">Bencesi Podcast</h3>
+
+                          <p class="nav-tease-podcasts__item-subtitle">Bencesi Podcast Ön Söz</p>
+                      </div>
+
+                      
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-podcasts__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/bencesi.png 870w, /static/images/bencesi.png 300w, /static/images/bencesi.png 150w, /static/images/bencesi.png 768w"
+      data-src="/static/images/bencesi.png"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                  </a>
+      </li>
+      </ul>
+
+<!--
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">More</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="https://brenebrown.com/podcast-team/">
+            Podcast Inquiries
+          </a>
+        </li>
+      
+      
+    </ul>
+  </div>
+-->
+</div>
+            </div>
+          </li>
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-hubs"
+              class=" site-nav__link"
+              href="/makaleler"
+              data-dropdown="hubs"
+              aria-controls="dropdown-hubs"
+            >
+              Yazılar
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-hubs"
+  class="site-nav-dropdown site-nav-dropdown--hubs"
+  aria-labelledby="nav-hubs"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Yazılar</h2>
+    <p class="site-nav-dropdown__description">Tüm Yazıları İncele</p>
+    <a href="/podcast" class="site-nav-dropdown__archive-link">Podcastleri İncele</a>
+  </div>
+
+      <ul class="nav-tease-hubs">
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/insanauzananyol" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">İnsana Uzanan Yol</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle">İnsana Uzanan Yol Ön Söz</p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.222222222222%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/insanauzananyol.jpeg 900w, /static/images/insanauzananyol.jpeg 300w, /static/images/insanauzananyol.jpeg 768w"
+      data-src="/static/images/insanauzananyol.jpeg"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/gununsonundakimbasariliolacak" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Günün Sonunda Kim Başarılı Olacak ?</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/gununsonunda.jpeg 2280w, /static/images/gununsonunda.jpeg 300w, /static/images/gununsonunda.jpeg 1024w, /static/images/gununsonunda.jpeg 768w, /static/images/gununsonunda.jpeg 1536w,/static/images/gununsonunda.jpeg 2048w"
+      data-src="/static/images/gununsonunda.jpeg"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/beceritoplumundanvarolustoplumuna" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Beceri Toplumundan Varoluş Toplumuna</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/beceritoplumundan.jpeg 2280w, /static/images/beceritoplumundan.jpeg 300w, /static/images/beceritoplumundan.jpeg 1024w, /static/images/beceritoplumundan.jpeg 768w, /static/images/beceritoplumundan.jpeg 1536w, /static/images/beceritoplumundan.jpeg 2048w"
+      data-src="/static/images/beceritoplumundan.jpeg"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/sirketlerkendimezunlar%C4%B1n%C4%B1yetistirirse" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Şirketler Kendi Mezunlarını Yetiştirirse</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/sirketlerkendimezun.jpeg 2280w, /static/images/sirketlerkendimezun.jpeg 300w, /static/images/sirketlerkendimezun.jpeg 1024w, /static/images/sirketlerkendimezun.jpeg 768w, /static/images/sirketlerkendimezun.jpeg 1536w, /static/images/sirketlerkendimezun.jpeg 2048w"
+      data-src="/static/images/sirketlerkendimezun.jpeg"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+            
+            </ul>
+
+
+  </div>
+            </div>
+          </li>
+                  
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-about"
+              class=" site-nav__link"
+              href="/hakkimda"
+              data-dropdown="about"
+              aria-controls="dropdown-about"
+            >
+              Hakkında
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-about"
+  class="site-nav-dropdown site-nav-dropdown--about"
+  aria-labelledby="nav-about"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Hakkında</h2>
+    <p class="site-nav-dropdown__description"></p>
+  </div>
+
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Keşfet</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/hakkimda">
+            Hakkında
+          </a>
+        </li>
+        
+    </ul>
+  </div>
+
+
+    
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">İletişim</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/iletisim">
+            Bizimle İletişime Geçmek İçin Lütfen Tıklayınız
+          </a>
+        </li>
+      
+                          
+        
+      
+      
+    </ul>
+  </div>
+
+
+  
+
+  
+</div>
+            </div>
+          </li>
+                  <li class="site-nav__item js-nav-item">
+            <a
+              id="nav-explore"
+              class=" site-nav__link"
+              href="/mentorluk/mentorluktan%C4%B1m-1"
+              data-dropdown="explore"
+              aria-controls="dropdown-explore"
+              
+            >
+              Mentörlük
+            </a>
+            <div class="site-nav__dropdown-container">
+              <div
+  id="dropdown-explore"
+  class="site-nav-dropdown site-nav-dropdown--explore"
+  aria-labelledby="nav-explore"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Mentörlük</h2>
+    <p class="site-nav-dropdown__description"></p>
+  </div>
+
+  
+<div class="nav-tease-links">
+  <h3 class="nav-tease-links__title">Mentörlük Nedir ?</h3>
+  <ul class="nav-tease-links__items">
+          <li class="nav-tease-links__item">
+        <a href="/mentorluk/mentorluktan%C4%B1m-1">
+          Mentörlük - 1
+        </a>
+      </li>
+          <li class="nav-tease-links__item">
+        <a href="/mentorluk/mentorluktan%C4%B1m-2">
+          Mentörlük - 2
+        </a>
+      </li>
+          
+      </ul>
+</div>
+
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Gerekli Koşullar</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/mentorluk/gereklikosullar">
+            Mentörlük - 3
+          </a>
+        </li>
+      
+                          
+        
+      
+    </ul>
+  </div>
+
+
+  
+<div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">İletişim</h3>
+    <ul class="nav-tease-links__items">
+                    <li class="nav-tease-links__item">
+                <a href="/iletisim">
+                    Daha Fazlasını Öğrenmek İçin Lütfen İletişime Geçiniz
+                </a>
+            </li>
+                    
+            </ul>
+</div>
+
+</div>
+            </div>
+          </li>
+              </ul>
+
+      <div class="site-nav__buttons">
+        <div class="site-nav__button site-nav__search-trigger">
+          <a href="" class="site-nav__link--search">
+            <svg>
+              <use href="" />
+            </svg><span class="visually-hidden">Search</span>
+          </a>
+        </div>
+
+        <button class="site-nav__button site-nav__menu-trigger js--menu-close " aria-controls="menu">
+          <div class="site-nav__menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="visually-hidden">Toggle Menu</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+      </div>
+</nav>
+  <div class="menu__content">
+    <details class="menu__item js-accordion">
+      <summary class="menu__item__trigger">
+        Kitaplar
+        <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+          <use href="#caret" />
+        </svg>
+      </summary>
+      <div class="menu__item__panel"><div
+  id="dropdown-books"
+  class="site-nav-dropdown site-nav-dropdown--books"
+  aria-labelledby="nav-books"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Kitaplar</h2>
+    <p class="site-nav-dropdown__description"></p>
+    <a href="/kitaplar" class="site-nav-dropdown__archive-link">Tüm Kitapları İncele</a>
+  </div>
+
+    <ul class="nav-tease-books">
+
+
+
+
+                
+
+
+
+      <li class="nav-tease-podcasts__item">
+        <a href="{% url 'secilmishuzursuzluk' %}" class="nav-tease-podcasts__item-link">
+          <div class="nav-tease-podcasts__item-content">
+            <h3 class="nav-tease-podcasts__item-title">Seçilmiş Huzursuzluk</h3>
+
+                          <p class="nav-tease-podcasts__item-subtitle">İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+                      </div>
+
+                      
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-podcasts__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %} 870w, {% static 'images/secilmishuzursuzluk.jpg' %} 300w, {% static 'images/secilmishuzursuzluk.jpg' %} 150w, {% static 'images/secilmishuzursuzluk.jpg' %} 768w"
+      data-src="{% static 'images/secilmishuzursuzluk.jpg' %}"
+      data-sizes="auto"
+      alt="Seçilmiş Huzursuzluk"
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                  </a>
+      </li>
+
+
+
+      <li class="nav-tease-podcasts__item">
+        <a href="{% url 'varligiminkabuledildigigun' %}" class="nav-tease-podcasts__item-link">
+          <div class="nav-tease-podcasts__item-content">
+            <h3 class="nav-tease-podcasts__item-title">Varlığımın Kabul Edildiği Gün</h3>
+
+                          <p class="nav-tease-podcasts__item-subtitle">İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+                      </div>
+
+                      
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-podcasts__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 870w, {% static 'images/varligiminkabuledildigigun.jpg' %} 300w, {% static 'images/varligiminkabuledildigigun.jpg' %} 150w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w"
+      data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+      data-sizes="auto"
+      alt="Varlığımın Kabul Edildiği Gün"
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                  </a>
+      </li>
+
+
+
+      
+                
+      </ul>
+
+</div>
+</div>
+    </details>
+    <details class="menu__item js-accordion">
+      <summary class="menu__item__trigger">
+        Podcastler
+        <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+          <use href="#caret" />
+        </svg>
+      </summary>
+      <div class="menu__item__panel"><div
+  id="dropdown-podcasts"
+  class="site-nav-dropdown site-nav-dropdown--podcasts"
+  aria-labelledby="nav-podcasts"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Podcastler</h2>
+    <p class="site-nav-dropdown__description"></p>
+    <a href="/podcast" class="site-nav-dropdown__archive-link">Podcastleri İncele</a>
+  </div>
+
+    <ul class="nav-tease-podcasts">
+                <li class="nav-tease-podcasts__item">
+        <a href="/podcast/bencesi" class="nav-tease-podcasts__item-link">
+          <div class="nav-tease-podcasts__item-content">
+            <h3 class="nav-tease-podcasts__item-title">Bencesi</h3>
+
+                          <p class="nav-tease-podcasts__item-subtitle">Bencesi</p>
+                      </div>
+
+                      
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-podcasts__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/bencesi.png 870w, /static/images/bencesi.png 300w, /static/images/bencesi.png 150w, /static/images/bencesi.png 768w"
+      data-src="/static/images/bencesi.png"
+      data-sizes="auto"
+      alt="Bencesi Podcast"
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                  </a>
+      </li>
+                
+      </ul>
+
+
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Daha Fazlası</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/podcast">
+            Tüm Postcastler
+          </a>
+        </li>
+      
+      
+    </ul>
+  </div>
+
+</div>
+</div>
+    </details>
+
+
+    <details class="menu__item js-accordion">
+      <summary class="menu__item__trigger">
+        Projeler
+        <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+          <use href="#caret" />
+        </svg>
+      </summary>
+      <div class="menu__item__panel"><div
+  id="dropdown-podcasts"
+  class="site-nav-dropdown site-nav-dropdown--podcasts"
+  aria-labelledby="nav-podcasts"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Projeler</h2>
+    <p class="site-nav-dropdown__description"></p>
+    <a href="{% url 'projeler' %}" class="site-nav-dropdown__archive-link">Projeleri İncele</a>
+  </div>
+
+    <ul class="nav-tease-podcasts">
+                <li class="nav-tease-podcasts__item">
+        <a href="{% url 'projeler' %}" class="nav-tease-podcasts__item-link">
+          <div class="nav-tease-podcasts__item-content">
+            <h3 class="nav-tease-podcasts__item-title">Kolektif Future</h3>
+
+                          <p class="nav-tease-podcasts__item-subtitle">Kolektif Future</p>
+                      </div>
+
+                      
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-podcasts__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="{% static 'images/toplu.jpeg' %} 870w, {% static 'images/toplu.jpeg' %} 300w, {% static 'images/toplu.jpeg' %} 150w, {% static 'images/toplu.jpeg' %} 768w"
+      data-src="{% static 'images/toplu.jpeg' %}"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                  </a>
+      </li>
+                
+      </ul>
+
+
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Daha Fazlası</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="{% url 'projeler' %}">
+            Tüm Projeler
+          </a>
+        </li>
+      
+      
+    </ul>
+  </div>
+
+</div>
+</div>
+    </details>
+
+
+    <details class="menu__item js-accordion">
+      <summary class="menu__item__trigger">
+        Yazılar
+        <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+          <use href="#caret" />
+        </svg>
+      </summary>
+      <div class="menu__item__panel"><div
+  id="dropdown-hubs"
+  class="site-nav-dropdown site-nav-dropdown--hubs"
+  aria-labelledby="nav-hubs"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Yazılar</h2>
+    <a href="{% url 'articles' %}" class="site-nav-dropdown__archive-link">Tüm Yazıları İncele</a>
+    <p class="site-nav-dropdown__description"></p>
+  </div>
+
+
+      <ul class="nav-tease-hubs">
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/insanauzananyol" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">İnsana Uzanan Yol</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.222222222222%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/insanauzananyol.jpeg 900w, /static/images/insanauzananyol.jpeg 300w, /static/images/insanauzananyol.jpeg 768w"
+      data-src="/static/images/insanauzananyol.jpeg"
+      data-sizes="auto"
+      alt="İnsana Uzanan Yol"
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/gununsonundakimbasariliolacak" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Günün Sonunda Kim Başarılı Olacak ?</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/gununsonunda.jpeg 2280w, /static/images/gununsonunda.jpeg 300w, /static/images/gununsonunda.jpeg 1024w, /static/images/gununsonunda.jpeg 768w, /static/images/gununsonunda.jpeg 1536w, /static/images/gununsonunda.jpeg 2048w"
+      data-src="/static/images/gununsonunda.jpeg"
+      data-sizes="auto"
+      alt=""
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/beceritoplumundanvarolustoplumuna" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Beceri Toplumundan Varoluş Toplumuna</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+  <div class="lazy-img__mod nav-tease-hubs__item-image">
+    <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+    <img class="lazy-img lazyload "
+      data-srcset="/static/images/beceritoplumundan.jpeg 2280w, /static/images/beceritoplumundan.jpeg 300w, /static/images/beceritoplumundan.jpeg 1024w, /static/images/beceritoplumundan.jpeg 768w, /static/images/beceritoplumundan.jpeg 1536w, /static/images/beceritoplumundan.jpeg 2048w"
+      data-src="/static/images/beceritoplumundan.jpeg"
+      data-sizes="auto"
+      alt="Beceri Toplumundan Varoluş Toplumuna"
+      data-caption=""
+      data-credit=""
+    >
+  </div>
+
+                    
+                </a>
+            </li>
+                                
+            <li class="nav-tease-hubs__item">
+                <a href="/makaleler/sirketlerkendimezunlar%C4%B1n%C4%B1yetistirirse" class="nav-tease-hubs__item-link">
+                    <h3 class="nav-tease-hubs__item-title">Şirketler Kendi Mezunlarını Yetiştirirse</h3>
+
+                                            <p class="nav-tease-hubs__item-subtitle"></p>
+                    
+                                            
+
+
+    
+    
+                                            <div class="lazy-img__mod nav-tease-hubs__item-image">
+                                              <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+                                              <img class="lazy-img lazyload "
+                                                data-srcset="/static/images/sirketlerkendimezun.jpeg 2280w, /static/images/sirketlerkendimezun.jpeg 300w, /static/images/sirketlerkendimezun.jpeg 1024w, /static/images/sirketlerkendimezun.jpeg 768w, /static/images/sirketlerkendimezun.jpeg 1536w, /static/images/sirketlerkendimezun.jpeg 2048w"
+                                                data-src="/static/images/sirketlerkendimezun.jpeg"
+                                                data-sizes="auto"
+                                                alt="Beceri Toplumundan Varoluş Toplumuna"
+                                                data-caption=""
+                                                data-credit=""
+                                              >
+                                            </div>
+
+                    
+                </a>
+            </li>
+            </ul>
+
+
+  </div>
+</div>
+    </details>
+    
+
+    <details class="menu__item js-accordion">
+      <summary class="menu__item__trigger">
+        Mentörlük
+        <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+          <use href="#caret" />
+        </svg>
+      </summary>
+      <div class="menu__item__panel"><div
+  id="dropdown-explore"
+  class="site-nav-dropdown site-nav-dropdown--explore"
+  aria-labelledby="nav-explore"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Keşfet</h2>
+    <p class="site-nav-dropdown__description"></p>
+  </div>
+
+  
+<div class="nav-tease-links">
+  <h3 class="nav-tease-links__title">Mentörlük</h3>
+  <ul class="nav-tease-links__items">
+          <li class="nav-tease-links__item">
+        <a href="{% url 'mentorluk1' %}">
+          Mentörlük Hizmeti
+        </a>
+      
+          
+      </ul>
+</div>
+
+    
+
+
+  
+<div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">İletişim</h3>
+    <ul class="nav-tease-links__items">
+                    <li class="nav-tease-links__item">
+                <a href="/iletisim">
+                    Daha Fazlasını Öğrenmek İçin Bizimle İletişime Geçebilirsiniz
+                </a>
+            </li>
+                    
+            </ul>
+</div>
+
+</div>
+</div>
+    </details>
+
+
+    <details class="menu__item js-accordion">
+      <summary class="menu__item__trigger">
+        Hakkında
+        <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+          <use href="#caret" />
+        </svg>
+      </summary>
+      <div class="menu__item__panel"><div
+  id="dropdown-about"
+  class="site-nav-dropdown site-nav-dropdown--about"
+  aria-labelledby="nav-about"
+>
+  <div class="site-nav-dropdown__intro">
+    <h2 class="site-nav-dropdown__title">Hakkında</h2>
+    <p class="site-nav-dropdown__description"></p>
+  </div>
+
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Keşfet</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/hakkimda">
+            Hakkında
+          </a>
+        </li>
+      
+                          
+        
+      
+      
+    </ul>
+  </div>
+
+
+    
+    <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">İletişim</h3>
+    <ul class="nav-tease-links__items">
+      
+                          
+        <li class="nav-tease-links__item">
+          <a href="/iletisim">
+            Bizimle İletişime Geç
+          </a>
+        </li>
+      
+                          
+        
+      
+      
+    </ul>
+  </div>
+
+
+ 
+
+  
+</div>
+</div>
+
+    </details>
+    
+  </div>
+  
+</nav>
+
+
+
+
+ {% block content %}{% endblock %}
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer__columns">
+        <div class="footer__col footer__col--logo">
+            <a href="" class="footer__link--logo">
+                <span class="visually-hidden"></span>
+                
+            </a>
+                            <p class="footer__text footer__text--mission">Hikayemize sahip çıkmak ve bu süreçte kendimizi sevmek, yapacağımız en cesurca şeydir.
+</p>
+                    </div>
+
+
+        <div class="footer__col footer__col--main-links">
+
+                                                    <div class="footer__menu-group footer__menu-group--media">
+                    <h2 class="footer__heading"></h2>
+                                            <ul class="footer__menu footer__menu--media">
+                                                            <li class="footer__menu__item">
+                                    <a class="footer__menu__link" href="/hakkimda">Hakkımda</a>
+                                </li>
+                                                            
+                                                    </ul>
+                                    </div>
+            
+                                                    <div class="footer__menu-group footer__menu-group--organization">
+                    <h2 class="footer__heading">Çalışmalar</h2>
+                                            <ul class="footer__menu footer__menu--organization">
+                                                            
+                                                            <li class="footer__menu__item">
+                                    <a class="footer__menu__link" href="https://www.kolektiffuture.com/">Kollektif Future</a>
+                                </li>
+                                                            <li class="footer__menu__item">
+                                    <a class="footer__menu__link" href="/kitaplar/secilmishuzursuzluk">Seçilmiş Huzursuzluk</a>
+                                </li>
+                                <li class="footer__menu__item">
+                                  <a class="footer__menu__link" href="/kitaplar/varligiminkabuledildigigun">Varlığımın Kabul Edildiği Gün</a>
+                              </li>
+                                                    </ul>
+                                    </div>
+                    </div>
+
+        <div class="footer__col footer__col--connect">
+            <h2 class="footer__heading">İletişim</h2>
+            <p class="footer__text">
+              <a href="{% url 'about_form' %}">Cihan Buğdaycı 'ya Mail Gönderin</a>
+            </p> <br>
+            <div class="footer__newsletter-wrapper">
+              <script type="text/javascript"></script>
+              
+              
+              <p class="footer__newsletter__terms">
+                  <!-- yazı yazabilirsin -->
+              </p>
+          </div>
+            <div class="footer__follow">
+                <h2 class="footer__heading">Sosyal Medya Hesaplarım</h2>
+                <ul class="social-list">
+                <li class="social-list__item">
+    <a class="social-list__link facebook"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Facebook&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://www.facebook.com/people/Cihan-Bu%C4%9Fdayc%C4%B1/100064091290311/">
+        <svg aria-hidden="true">
+            <use href="#facebook"/>
+        </svg>
+        <span class="visually-hidden">facebook</span>
+    </a>
+</li>
+            <li class="social-list__item">
+    <a class="social-list__link twitter"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Twitter&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://twitter.com/cihanbugdaycii?lang=en">
+        <svg aria-hidden="true">
+            <use href="#twitter"/>
+        </svg>
+        <span class="visually-hidden">twitter</span>
+    </a>
+</li>
+            <li class="social-list__item">
+    <a class="social-list__link instagram"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Instagram&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://www.instagram.com/cihan.bugdaycii/?hl=en">
+        <svg aria-hidden="true">
+            <use href="#instagram"/>
+        </svg>
+        <span class="visually-hidden">instagram</span>
+    </a>
+</li>
+            <li class="social-list__item">
+    <a class="social-list__link linkedin"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;Social&quot;,&quot;ga-event-action&quot;:&quot;Exit&quot;,&quot;ga-event-label&quot;:&quot;Linkedin&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Social Exit&quot;}) "        target="_blank" href="https://www.linkedin.com/in/cihanbugdayci/">
+        <svg aria-hidden="true">
+            <use href="#linkedin"/>
+        </svg>
+        <span class="visually-hidden">linkedin</span>
+    </a>
+</li>
+            
+    </ul>            </div>
+        </div>
+    </div>
+
+    <div class="footer__utilities">
+        <span class="footer__copyright">©2022 Cihan Buğdaycı</span>
+        <ul class="footer__menu footer__menu--utilities">
+          <li>
+            <a class="footer__menu__link" href="https://www.linkedin.com/in/murat-cengiz-197533204/">Bu Website Murat Cengiz Tarafından Yapılmıştır.</a>
+          </li>
+          
+            </ul>
+            </div>
+</footer>
+    
+    </div>
+
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z5374T" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/dom-ready.min.js?ver=d996b53411d1533a84951212ab6ac4ff' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/a11y.min.js?ver=a38319d7ba46c6e60f7f9d4c371222c5' id='wp-a11y-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-content/themes/brenebrown/dist/vendor.js?ver=0.1.0' id='vendor-js'></script>
+<script type='text/javascript' src='https://polyfill.io/v3/polyfill.min.js?features=fetch%2CArray.from%2CElement.prototype.append&#038;ver=0.1.0' id='polyfill-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/vendor/react.min.js?ver=17.0.1' id='react-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/vendor/react-dom.min.js?ver=17.0.1' id='react-dom-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/escape-html.min.js?ver=00a5735837e9efe13da1d979f16a7105' id='wp-escape-html-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-includes/js/dist/element.min.js?ver=3dfdc75a0abf30f057df44e9a39abe5b' id='wp-element-js'></script>
+<script type='text/javascript' src='https://brenebrown.com/wp-content/themes/brenebrown/dist/app.js?ver=0.1.0' id='script.js-js'></script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 10) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [10, 1]) } );
+</script>
+
+
+    <script>
+      window.instantsearch = {
+        env: {
+          ALGOLIA_APPLICATION_ID: 'QCZ3FZP1CH',
+          ALGOLIA_SEARCH_ONLY_API_KEY: 'b53da31b81e260e2aeb7c1b20222f5c2',
+          ALGOLIA_INDEX_NAME: 'live_search'
+        },
+        config: []
+      }
+    </script>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://brenebrown.com/wp-content/themes/brenebrown/static/js/simplebar.js"></script>
+    <script src="https://brenebrown.com/wp-content/themes/brenebrown/static/js/custom.js"></script>
+
+
+</body>
+</html>

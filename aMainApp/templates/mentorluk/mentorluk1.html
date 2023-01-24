@@ -1,0 +1,252 @@
+{% extends 'aMainApp/layout.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<style>
+  .site-nav .site-nav__logo, .site-nav .site-nav-list > .site-nav__item >
+  a, .site-nav .site-nav__buttons,
+  .site-nav .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: white;
+  }
+
+  .site-nav .site-nav__top-level::after {
+      background-color: white;
+  }
+
+  .site-nav.active .site-nav__logo, .site-nav.active .site-nav-list > .site-nav__item >
+  a, .site-nav.active .site-nav__buttons, .site-nav.active .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: black;
+  }
+
+</style>
+
+
+
+<section class="home__hero fullbleed  mobile"
+style="background-image:url('/static/images/sunum1.jpg'); max-height:580px; opacity: 2.4; "> <!-- ANA SAYFA ARKA PLAN!!  -->
+
+   <div class="mobile-background" style="background-image:url('/static/images/sunum1.jpg');">
+           
+           <div class="content" style="">
+                       <h1>  <!-- ANA SAYFA H1  --></h1>
+                                           
+</div>
+       </div>
+</section>
+  <section class="general_content">
+    <div class="content" style="max-width:1050px;">
+  <h2 style="text-align: center;"><br />Mentörlük</h2>
+  <img src="" alt="" style="max-width:400px; max-height:600px; display: block; margin-left: auto; margin-right: auto; font-family: 'Lora'; font-size:24px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+  <p style="">
+
+    Cihan Buğdaycı psikoloji, eğitim ve girişimcilik disiplinlerini birleştirerek yenilikçi ve faydalı
+    alternatif eğim modelleri tasarlayarak insanları 21. Yüzyılda kazanmaları gereken beceriler
+    konusunda geliştirmektedir. <br>
+    <br> 2015’ten buna yüzlerce insana mentorlük yapan ve neticesinde çok olumlu geri dönüşler
+    alan Cihan Buğdaycı, psikoloji bilgisi ile insanların gelişmeye ihtiyaç duydukları süreçleri
+    organize ederek insanlarla ‘Hayal Ortaklığı’ yapmaya başladı. <br> <br>
+    Cihan Buğdaycı ailelerin, öğrencilerin ve eğitim kurumlarının mentorlüğe olan ihtiyacına
+    cevap verecek modeller tasarlayarak insanların ve kurumların Hayal Ortağı olmaya devam
+    ediyor.
+
+  </p>
+
+  </div>
+  </section>
+
+
+  <head>
+    <style>
+       
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background-color: rgb(228,238,226);
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    background-color: rgb(228,238,226);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+  
+}
+
+/* Add an italic font style to all quotes */
+q {}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}      
+          
+    </style>
+</head>
+<section style="background-color: rgb(228,238,226); font-family: 'Lora'; font-size:25px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68); ">
+<div class="slideshow-container">
+
+    <div class="mySlides">
+      <q>Hayatınızın olumlu yönde değiştiği bir süreç vardır. Cihan Buğdaycı benim hayatımın bu değişimindeki en önemli rolü oynadı. Bana çok iyi bir mentor, abi oldu. Yıkıcı değil yapıcı eleştirilerle gelişim sürecimin sağlıklı ve hızlı ilerlemesini sağladı. Dünya insanı olma yolunda ilerlerken bana çok önemli katkılarda bulundu. Tanıştığım insanlar, bulunduğum ekosistemler, birlikte çalıştığım insanlar onun sayesinde olumlu yönde değişti. Olmak istediğim kişiye Cihan Buğdaycı sayesinde dönüşmeye başladım. </q>
+      <p class="author">- Alper Atalı</p>
+    </div>
+    
+    <div class="mySlides">
+      <q>Cihan Bey Alper’e hayatının en önemli dönemlerinde birçok noktada destek oldu ve anlam kattı. Cihan Bey iyi bir lider olarak Alper’e problemlerle nasıl başa çıkabileceğini, kriz anlarını en doğru şekilde nasıl yönetebileceğini öğretti. Aynı zamanda özgüvenli bir birey olmasını sağlayarak da kişisel gelişimine önemli bir katkıda bulundu. Alper’in Cihan Bey sayesinde dönüştüğü insan aile içerisindeki ilişkilerimi de çok iyi etkiledi. Kalbinin güzelliği yüzüne yansımış Cihan Bey’e teşekkürlerimizi iletiyoruz.</q>
+      <p class="author">- Atalı Ailesi</p>
+    </div>
+    
+    <div class="mySlides">
+      <q>Hayatımda yaşanan en büyük değişikler, lise dönemim içerisinde kurduğum bazı bağlantılar sayesinde gerçekleşti. Bu bağlantılar arasında en büyük etkiyi oluşturan ise şüphesiz olarak Cihan Buğdaycıydı. İlk olarak lise çağında bir genç olsam bile kendime güvenerek neler yapabileceğimi fark etmemi sağladı. Kendisi “kişisel gelişim sürecimi nasıl daha verimli hale getirebilirim?” sorusuna sıkça cevap bulmamı sağladı ve hayatımda bir rol model oldu. 21.yy için yetkin birer genç olmayı ondan öğrendim.</q>
+      <p class="author">- Alperen Lermi</p>
+    </div>
+
+    <div class="mySlides">
+        <q>Cihan Buğdaycı benim hayatımı değiştiren kişi oldu. Herkes başaramazsın derken o başarabilirsin dedi. Her zaman büyük bir destekçi olarak karşımızdaydı ve özgüven kazanmamda büyük rol oynadı.</q>
+        <p class="author">- Efe Demirkaya</p>
+    </div>
+
+    <div class="mySlides">
+        <q>Çocuğumuzun gelişimini gözlemdiğimizde Cihan Buğdaycı’nın etkisini her zaman gördük ona sadece bir mentor veya abi olmadı onun için bir idol oldu. Bizim için Cihan Buğdaycı fazlasıyla değerli.</q>
+        <p class="author">- Demirkaya Ailesi</p>
+    </div>
+    
+
+    <div class="mySlides">
+        <q>Kişisel gelişim sürecimizde en çok destek ihtiyacı duyduğumuz kişiler mentorlerimiz oluyor. Lise yıllarımda Cihan Buğdaycı’nın hayatımda olması, yaptığı geri bildirimler ve verdiği destek ile yaşadığım süreçleri doğru yönetmemi sağladı. 21. Yüzyıl Yetkinliklerine sahip bir genç olmamı sağlayarak kendimi yeni dünyaya hazırlamam konusunda etkisi çok büyük. Öğrenirken öğrettiğim bir hayat tarzı benimsemem gerektiğini, açık görüşlülük ve sağlıklı iletişimin ne kadar önemli olduğunu öğrenmemde katkıları yadsınamaz. </q>
+        <p class="author">- Şevval Yoldaş</p>
+    </div>
+
+
+    <div class="mySlides">
+        <q>Kızımızın kendini geliştiren bir birey olmak istediğinin her zaman farkındaydık. Gelişim sürecinde Cihan Buğdaycı ile tanışarak kendisini nasıl geliştirmesi gerektiği yönünde birçok şey öğrendi. Hem kişisel hayatını hem de kariyer hayatını önemli ve olumlu ölçüde etkilediği için çok mutluyuz.  </q>
+        <p class="author">- Yoldaş Ailesi</p>
+    </div>
+
+    <div class="mySlides">
+        <q>3 senelik Kolektif Future serüvenimizde bizlere hem abilik hem mentorlük yapan Cihan Buğdaycı `nın bana gelişim sürecimde büyük katkıları oldu. Sosyalleşme ve kendimi ifade etme noktasında benim üzerimde büyük etkileri olduğunu söyleyebilirim. Kişisel gelişimimiz için çabaladığımız sürecimizde verdiği tavsiyeler ve öğütler sayesinde kendimizi keşfetme imkanı bulduk. Kendimi keşfetme sürecimde bana büyük katkıları olan Cihan Buğdaycı sayesinde şuan kararlarım doğrultusunda çok daha emin ve cesur adımlar atabiliyorum.  </q>
+        <p class="author">- İlayda Sur</p>
+    </div>
+
+    <div class="mySlides">
+        <q>İlayda Kolektif Future süreci boyunca kendini geliştirme noktasında çalışmalar yaptı. Bu çalışmalarda en büyük destekçisi ve mentorü Cihan Buğdaycı oldu. İlayda bu süreçte daha sosyal ve çalışkan bir insan oldu. İlayda`nın gelişimini görmek bizleri çok mutlu ediyor. Bu gelişim sürecinde Cihan Buğdaycı`nın ilayda üzerinde büyük emekleri ve desteklerinin olduğunu görebiliyoruz. Yazdığı kitaplar sayesinde bizler de Cihan Buğdaycı` dan mentorlük almış gibi olduk. Kitaplarını okumak bizlere kitap okumayı sevdirdi. Ailemizin gelişimini de sağladı. </q>
+        <p class="author">- Sur Ailesi</p>
+    </div>
+
+
+    <div class="mySlides">
+        <q>Kolektif Future'da üç dönem boyunca Cihan Buğdaycı'dan aldığım eğitimler, tavsiyeler ve sorumluluklarıma yaklaşım şeklimde bana kazandırdığı vizyon sayesinde neler üstüne çalışmayı sevdiğimi, nasıl çalışmam gerektiğini bana gösterdi. Bu katkılar beni de ailemi de mutlu kılıyor.</q>
+        <p class="author">- Emre Tunç Yılmaz</p>
+    </div>
+
+    <div class="mySlides">
+        <q>Cihan Bey her şeyden önce iyi bir abi. Yönlendirmeleri, planlamaları doğru ve zamanında. İyi bir eğitmen. Ve kendini çok güzel yenileyebilen, geliştiren ve bu süreçleri çocuklara çok güzel ve yerinde iyileştiren çok başarılı bir lider. Cihan Bey iyi ki varsınız. Teşekkürler.</q>
+        <p class="author">- Yılmaz Ailesi</p>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span>  
+      <span class="dot" onclick="currentSlide(7)"></span>  
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </section>
+
+{% endblock %}

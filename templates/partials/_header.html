@@ -1,0 +1,1474 @@
+{% load static %}
+<nav class="site-nav  js-site-nav" aria-label="Primary">
+    <div class="site-nav__top-level">
+      <div class="site-nav__main" style="color:white">
+        <div class="site-nav__logo">
+          <a href="/" class="site-nav__link--logo" style="font-family: 'Courier New', monospace; ">
+            Cihan Buğdaycı
+            <span class="visually-hidden">Home</span>
+          </a>
+        </div>
+  
+        <ul class="site-nav-list" role="tablist">
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-books"
+                class=" site-nav__link"
+                href="{% url 'books' %}"
+                data-dropdown="books"
+                aria-controls="dropdown-books"
+                
+              >
+                Kitaplar
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-books"
+    class="site-nav-dropdown site-nav-dropdown--books"
+    aria-labelledby="nav-books"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Kitaplar</h2>
+      <p class="site-nav-dropdown__description"></p>
+      <a href="{% url 'books' %}" class="site-nav-dropdown__archive-link">Tüm Kitaplar</a>
+    </div>
+  
+      <ul class="nav-tease-books">
+                  <li class="nav-tease-books__item">
+          <a href="{% url 'secilmishuzursuzluk' %}" class="nav-tease-books__item-link">
+  
+                        <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+                
+  <div class="book-cover-wrapper">
+      <figure  onclick=""             class="book-cover redirect   ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %} 1331w, {% static 'images/secilmishuzursuzluk.jpg' %} 215w, {% static 'images/secilmishuzursuzluk.jpg' %} 733w, {% static 'images/secilmishuzursuzluk.jpg' %} 768w, {% static 'images/secilmishuzursuzluk.jpg' %} 1099w"
+       data-src="{% static 'images/secilmishuzursuzluk.jpg' %}"
+       data-sizes="auto"
+       alt="Seçilmiş Huzursuzluk"
+  />
+  
+              </figure>
+  </div>
+              </div>
+              <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+                
+  <div class="book-cover-wrapper">
+      <figure  onclick=""             class="book-cover redirect book-cover--even-spacing  ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %} 1331w, {% static 'images/secilmishuzursuzluk.jpg' %} 215w, {% static 'images/secilmishuzursuzluk.jpg' %} 733w, {% static 'images/secilmishuzursuzluk.jpg' %} 768w, {% static 'images/secilmishuzursuzluk.jpg' %} 1099w"
+       data-src="{% static 'images/secilmishuzursuzluk.jpg' %}"
+       data-sizes="auto"
+       alt="Seçilmiş Huzursuzluk"
+  />
+  
+              </figure>
+  </div>
+              </div>
+            
+            <div class="nav-tease-books__item-text">
+              <h3 class="nav-tease-books__item-title">Seçilmiş Huzursuzluk</h3>
+  
+                            <p class="nav-tease-books__item-subtitle">İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+                        </div>
+          </a>
+        </li>
+                  <li class="nav-tease-books__item">
+          <a href="{% url 'varligiminkabuledildigigun' %}" class="nav-tease-books__item-link">
+  
+                        <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+                
+  <div class="book-cover-wrapper">
+      <figure  onclick=""             class="book-cover redirect   ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %} 215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+       data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+       data-sizes="auto"
+       alt="Varlığımın Kabul Edildiği Gün"
+  />
+  
+              </figure>
+  </div>
+              </div>
+              <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+                
+  <div class="book-cover-wrapper">
+      <figure             class="book-cover redirect book-cover--even-spacing  ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %} 215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+       data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+       data-sizes="auto"
+       alt="Varlığımın Kabul Edildiği Gün"
+  />
+  
+              </figure>
+  </div>
+              </div>
+            
+            <div class="nav-tease-books__item-text">
+              <h3 class="nav-tease-books__item-title">Varlığımın Kabul Edildiği Gün</h3>
+  
+                            <p class="nav-tease-books__item-subtitle">Kör, sağır ve dilsiz çocukların hayata tutunma mücadelesi.</p>
+                        </div>
+          </a>
+        </li>
+                  
+        </ul>
+  
+  </div>
+              </div>
+            </li>
+                    <li class="site-nav__item js-nav-item" >
+              <a
+                id="nav-podcasts"
+                class=" site-nav__link"
+                href="{% url 'podcast' %}"
+                data-dropdown="podcasts"
+                aria-controls="dropdown-podcasts"
+                
+                
+              >
+                Podcastler
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-podcasts"
+    class="site-nav-dropdown site-nav-dropdown--podcasts"
+    aria-labelledby="nav-podcasts"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Podcastler</h2>
+      <p class="site-nav-dropdown__description"></p>
+      <a href="{% url 'podcast' %}" class="site-nav-dropdown__archive-link">Tüm Podcastler</a>
+    </div>
+  
+      <ul class="nav-tease-podcasts">
+                  <li class="nav-tease-podcasts__item">
+          <a href="{% url 'bencesi' %}" class="nav-tease-podcasts__item-link">
+            <div class="nav-tease-podcasts__item-content">
+              <h3 class="nav-tease-podcasts__item-title">Bencesi Podcast</h3>
+  
+                            <p class="nav-tease-podcasts__item-subtitle">Bencesi</p>
+                        </div>
+  
+                        
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-podcasts__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/bencesi.png' %} 870w, {% static 'images/bencesi.png' %} 300w, {% static 'images/bencesi.png' %} 150w, {% static 'images/bencesi.png' %} 768w"
+        data-src="{% static 'images/bencesi.png' %}"
+        data-sizes="auto"
+        alt="Bencesi Podcast"
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                    </a>
+        </li>
+                  
+        </ul>
+  
+  <!--
+        <div class="nav-tease-links">
+          <h3 class="nav-tease-links__title">More</h3>
+          <ul class="nav-tease-links__items">
+            
+                                
+              <li class="nav-tease-links__item">
+                <a href="https://brenebrown.com/podcast-team/">
+                  Podcast Inquiries
+                </a>
+              </li>
+            
+            
+          </ul>
+        </div>
+  -->
+  
+  </div>
+              </div>
+            </li>
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-hubs"
+                class=" site-nav__link"
+                href="{% url 'articles' %}"
+                data-dropdown="hubs"
+                aria-controls="dropdown-hubs"
+                
+                
+              >
+                Yazılar
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-hubs"
+    class="site-nav-dropdown site-nav-dropdown--hubs"
+    aria-labelledby="nav-hubs"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Yazılar</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+        <ul class="nav-tease-hubs">
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'insanauzananyol' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">İnsana Uzanan Yol</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">İnsana Uzanan Yol Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.222222222222%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/insanauzananyol.jpeg' %} 900w, {% static 'images/insanauzananyol.jpeg' %} 300w, {% static 'images/insanauzananyol.jpeg' %} 768w"
+        data-src="{% static 'images/insanauzananyol.jpeg' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'gununsonundakimbasariliolacak' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Günün Sonunda Kim Başarılı Olacak ?</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Günün Sonunda Kim Başarılı Olacak ? Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/gununsonunda.jpeg' %} 2280w, {% static 'images/gununsonunda.jpeg' %} 300w, {% static 'images/gununsonunda.jpeg' %} 1024w, {% static 'images/gununsonunda.jpeg' %} 768w, {% static 'images/gununsonunda.jpeg' %} 1536w, {% static 'images/gununsonunda.jpeg' %} 2048w"
+        data-src="{% static 'images/gununsonunda.jpeg' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'beceritoplumundan' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Beceri Toplumundan Varoluş Toplumuna</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Beceri Toplumundan Varoluş Toplumuna Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/beceritoplumundan.jpeg' %} 2280w, {% static 'images/beceritoplumundan.jpeg' %} 300w, {% static 'images/beceritoplumundan.jpeg' %} 1024w, {% static 'images/beceritoplumundan.jpeg' %} 768w, {% static 'images/beceritoplumundan.jpeg' %} 1536w, {% static 'images/beceritoplumundan.jpeg' %} 2048w"
+        data-src="{% static 'images/beceritoplumundan.jpeg' %}"
+        data-sizes="auto"
+        alt="Beceri Toplumundan Varoluş Toplumuna"
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'sirketlerkendi' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Şirketler Kendi Mezunlarını Yetiştirirse</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Şirketler Kendi Mezunlarını Yetiştirirse Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/sirketlerkendimezun.jpeg' %} 2280w, {% static 'images/sirketlerkendimezun.jpeg' %} 300w, {% static 'images/sirketlerkendimezun.jpeg' %} 1024w, {% static 'images/sirketlerkendimezun.jpeg' %} 768w, {% static 'images/sirketlerkendimezun.jpeg' %} 1536w, {% static 'images/sirketlerkendimezun.jpeg' %} 2048w"
+        data-src="{% static 'images/sirketlerkendimezun.jpeg' %}"
+        data-sizes="auto"
+        alt="Şirketler Kendi Mezunlarını Yetiştirirse"
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+              </ul>
+  
+  
+    </div>
+              </div>
+            </li>
+  
+  
+  <!-- Mentörlük Navbar Başlangıç -->
+            <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-explore"
+                class=" site-nav__link"
+                href="{% url 'mentorluk1' %}"
+                data-dropdown="explore"
+                aria-controls="dropdown-explore"
+              >
+                Mentörlük
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+          id="dropdown-explore"
+          class="site-nav-dropdown site-nav-dropdown--explore"
+          aria-labelledby="nav-explore"
+          >
+          <div class="site-nav-dropdown__intro">
+          <h2 class="site-nav-dropdown__title">Mentörlük</h2>
+          <p class="site-nav-dropdown__description"></p>
+          </div>
+          
+          
+          <div class="nav-tease-links">
+          <h3 class="nav-tease-links__title">Mentörlük Nedir ?</h3>
+          <ul class="nav-tease-links__items">
+            <li class="nav-tease-links__item">
+          <a href="{% url 'mentorluk1' %}">
+            Mentörlük Tanım - 1
+          </a>
+          </li>
+            <li class="nav-tease-links__item">
+          <a href="{% url 'mentorluk2' %}">
+            Mentörlük Tanım - 2
+          </a>
+          </li>
+            
+          </ul>
+          </div>
+          
+          <div class="nav-tease-links">
+          <h3 class="nav-tease-links__title">Mentörlük Hizmeti</h3>
+          <ul class="nav-tease-links__items">
+          
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'mentorluk3' %}">
+              Gerekli Koşullar
+            </a>
+          </li>
+          
+                            
+          
+          
+          
+          </ul>
+          </div>
+          
+          
+          
+          <div class="nav-tease-links">
+          <h3 class="nav-tease-links__title">İletişim</h3>
+          <ul class="nav-tease-links__items">
+                      <li class="nav-tease-links__item">
+                  <a href="{% url 'about_form' %}">
+                      Daha Fazlasını Öğrenmek İçin Bizimle İletişime Geçebilirsiniz
+                  </a>
+              </li>
+                      
+              </ul>
+          </div>
+          
+          </div>
+              </div>
+            </li>
+  <!-- Mentörlük Navbar Bitiş -->
+            
+                    
+  
+  <!-- Hakkında Navbar Başlangıç -->
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-about"
+                class=" site-nav__link"
+                href="{% url 'about' %}"
+                data-dropdown="about"
+                aria-controls="dropdown-about"
+              >
+                Hakkında
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-about"
+    class="site-nav-dropdown site-nav-dropdown--about"
+    aria-labelledby="nav-about"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Hakkında</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">Keşfet</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'about' %}">
+              Hakkında
+            </a>
+          </li>
+        
+  
+      </ul>
+  
+      
+    </div>
+    <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">İletişim</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'about_form' %}">
+              Bizimle İletişime Geç
+            </a>
+          </li>
+        
+  
+      </ul>
+  
+      
+    </div>
+  <!-- Hakkında Navbar Bitiş -->
+  
+    
+  
+    
+  </div>
+              </div>
+            </li>
+  
+  
+  
+            
+                    
+                </ul>
+  
+        <div class="site-nav__buttons">
+          <div class="site-nav__button site-nav__search-trigger">
+            <a href="" class="site-nav__link--search">
+              <svg>
+                <use href="" />
+              </svg><span class="visually-hidden">Search</span>
+            </a>
+          </div>
+  
+          <button class="site-nav__button site-nav__menu-trigger js--menu-toggle " aria-controls="menu">
+            <div class="site-nav__menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="visually-hidden">Toggle Menu</span>
+            </div>
+          </button>
+        </div>
+      </div>
+  
+        </div>
+  </nav>
+      <nav
+    id="menu"
+    class="menu js--menu"
+    aria-hidden="true"
+    aria-modal="true"
+    role="dialog"
+    tabindex="0"
+  >
+    
+  <nav class="site-nav site-nav--in-menu js-site-nav" aria-label="Primary">
+    <div class="site-nav__top-level">
+      <div class="site-nav__main" >
+        <div class="site-nav__logo">
+          <a href="/" class="site-nav__link--logo">
+            <svg viewbox="0 0 206 26" aria-hidden="true">
+              <use href=""/>
+            </svg>
+            <span class="">Cihan Buğdaycı</span>
+          </a>
+        </div>
+  
+        <ul class="site-nav-list" role="tablist">
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-books"
+                class=" site-nav__link"
+                href="{% url 'books' %}"
+                data-dropdown="books"
+                aria-controls="dropdown-books"
+                
+              >
+                Kitaplar
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-books"
+    class="site-nav-dropdown site-nav-dropdown--books"
+    aria-labelledby="nav-books"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Kitaplar</h2>
+      <p class="site-nav-dropdown__description"></p>
+      <a href="{% url 'books' %}" class="site-nav-dropdown__archive-link">Kitapları İncele</a>
+    </div>
+  
+      <ul class="nav-tease-books">
+                  <li class="nav-tease-books__item">
+          <a href="{% url 'secilmishuzursuzluk' %}" class="nav-tease-books__item-link">
+  
+                        <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+                
+  <div class="book-cover-wrapper">
+      <figure  onclick=""             class="book-cover redirect   ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %} 1331w, {% static 'images/secilmishuzursuzluk.jpg' %}  215w, {% static 'images/secilmishuzursuzluk.jpg' %}  733w, {% static 'images/secilmishuzursuzluk.jpg' %}  768w,{% static 'images/secilmishuzursuzluk.jpg' %}  1099w"
+       data-src="{% static 'images/secilmishuzursuzluk.jpg' %} "
+       data-sizes="auto"
+       alt=""
+  />
+  
+              </figure>
+  </div>
+              </div>
+              <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+                
+  <div class="book-cover-wrapper">
+      <figure  onclick=""             class="book-cover redirect book-cover--even-spacing  ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %}  1331w, {% static 'images/secilmishuzursuzluk.jpg' %}  215w,{% static 'images/secilmishuzursuzluk.jpg' %}  733w, {% static 'images/secilmishuzursuzluk.jpg' %}  768w, {% static 'images/secilmishuzursuzluk.jpg' %}  1099w"
+       data-src="{% static 'images/secilmishuzursuzluk.jpg' %} "
+       data-sizes="auto"
+       alt=""
+  />
+  
+              </figure>
+  </div>
+              </div>
+            
+            <div class="nav-tease-books__item-text">
+              <h3 class="nav-tease-books__item-title">Seçilmiş Huzursuzluk</h3>
+  
+                            <p class="nav-tease-books__item-subtitle">İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+                        </div>
+          </a>
+        </li>
+                  <li class="nav-tease-books__item">
+          <a href="{% url 'varligiminkabuledildigigun' %}" class="nav-tease-books__item-link">
+  
+                        <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+                
+  <div class="book-cover-wrapper">
+      <figure  onclick=""             class="book-cover redirect   ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %} 215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+       data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+       data-sizes="auto"
+       alt=""
+  />
+  
+              </figure>
+  </div>
+              </div>
+              <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+                
+  <div class="book-cover-wrapper">
+      <figure  onclick=""             class="book-cover redirect book-cover--even-spacing  ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %} 215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+       data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+       data-sizes="auto"
+       alt=""
+  />
+  
+              </figure>
+  </div>
+              </div>
+            
+            <div class="nav-tease-books__item-text">
+              <h3 class="nav-tease-books__item-title">Varlığımın Kabul Edildiği Gün</h3>
+  
+                            <p class="nav-tease-books__item-subtitle">Kör, sağır ve dilsiz çocukların hayata tutunma mücadelesi.</p>
+                        </div>
+          </a>
+        </li>
+                  
+        </ul>
+  
+  </div>
+              </div>
+            </li>
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-podcasts"
+                class=" site-nav__link"
+                href="{% url 'podcast' %}"
+                data-dropdown="podcasts"
+                aria-controls="dropdown-podcasts"
+                style="color:black;"
+                
+              >
+                Podcastler
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-podcasts"
+    class="site-nav-dropdown site-nav-dropdown--podcasts"
+    aria-labelledby="nav-podcasts"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Podcastler</h2>
+      <p class="site-nav-dropdown__description"></p>
+      <a href="{% url 'podcast' %}" class="site-nav-dropdown__archive-link">Podcastleri İncele</a>
+    </div>
+  
+      <ul class="nav-tease-podcasts">
+                  <li class="nav-tease-podcasts__item">
+          <a href="{% url 'bencesi' %}" class="nav-tease-podcasts__item-link">
+            <div class="nav-tease-podcasts__item-content">
+              <h3 class="nav-tease-podcasts__item-title">Bencesi Podcast</h3>
+  
+                            <p class="nav-tease-podcasts__item-subtitle">Bencesi Podcast Ön Söz</p>
+                        </div>
+  
+                        
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-podcasts__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/bencesi.png' %} 870w, {% static 'images/bencesi.png' %} 300w, {% static 'images/bencesi.png' %} 150w, {% static 'images/bencesi.png' %} 768w"
+        data-src="{% static 'images/bencesi.png' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                    </a>
+        </li>
+        </ul>
+  
+  <!--
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">More</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="https://brenebrown.com/podcast-team/">
+              Podcast Inquiries
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  -->
+  </div>
+              </div>
+            </li>
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-hubs"
+                class=" site-nav__link"
+                href="{% url 'articles' %}"
+                data-dropdown="hubs"
+                aria-controls="dropdown-hubs"
+                
+              >
+                Yazılar
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-hubs"
+    class="site-nav-dropdown site-nav-dropdown--hubs"
+    aria-labelledby="nav-hubs"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Yazılar</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+        <ul class="nav-tease-hubs">
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'insanauzananyol' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">İnsana Uzanan Yol</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">İnsana Uzanan Yol Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.222222222222%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/insanauzananyol.jpeg' %} 900w, {% static 'images/insanauzananyol.jpeg' %} 300w, {% static 'images/insanauzananyol.jpeg' %} 768w"
+        data-src="{% static 'images/insanauzananyol.jpeg' %}"
+        data-sizes="auto"
+        alt="Atlas Feature Image"
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'gununsonundakimbasariliolacak' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Günün Sonunda Kim Başarılı Olacak ?</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Günün Sonunda Kim Başarılı Olacak ? Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/gununsonunda.jpeg' %} 2280w, {% static 'images/gununsonunda.jpeg' %} 300w, {% static 'images/gununsonunda.jpeg' %} 1024w, {% static 'images/gununsonunda.jpeg' %} 768w, {% static 'images/gununsonunda.jpeg' %} 1536w,{% static 'images/gununsonunda.jpeg' %} 2048w"
+        data-src="{% static 'images/gununsonunda.jpeg' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'beceritoplumundan' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Beceri Toplumundan Varoluş Toplumuna</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Beceri Toplumundan Varoluş Toplumuna Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/beceritoplumundan.jpeg' %} 2280w, {% static 'images/beceritoplumundan.jpeg' %} 300w, {% static 'images/beceritoplumundan.jpeg' %} 1024w, {% static 'images/beceritoplumundan.jpeg' %} 768w, {% static 'images/beceritoplumundan.jpeg' %} 1536w, {% static 'images/beceritoplumundan.jpeg' %} 2048w"
+        data-src="{% static 'images/beceritoplumundan.jpeg' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'sirketlerkendi' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Şirketler Kendi Mezunlarını Yetiştirirse</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Şirketler Kendi Mezunlarını Yetiştirirse Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/sirketlerkendimezun.jpeg' %} 2280w, {% static 'images/sirketlerkendimezun.jpeg' %} 300w, {% static 'images/sirketlerkendimezun.jpeg' %} 1024w, {% static 'images/sirketlerkendimezun.jpeg' %} 768w, {% static 'images/sirketlerkendimezun.jpeg' %} 1536w, {% static 'images/sirketlerkendimezun.jpeg' %} 2048w"
+        data-src="{% static 'images/sirketlerkendimezun.jpeg' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+              </ul>
+  
+  
+    </div>
+              </div>
+            </li>
+                    
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-about"
+                class=" site-nav__link"
+                href="{% url 'about' %}"
+                data-dropdown="about"
+                aria-controls="dropdown-about"
+              >
+                Hakkında
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-about"
+    class="site-nav-dropdown site-nav-dropdown--about"
+    aria-labelledby="nav-about"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Hakkında</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">Keşfet</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'about' %}">
+              Hakkında
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+  
+  
+      
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">İletişim</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'about_form' %}">
+              Bizimle İletişime Geçmek İçin Lütfen Tıklayınız
+            </a>
+          </li>
+        
+                            
+          
+        
+        
+      </ul>
+    </div>
+  
+  
+    
+  
+    
+  </div>
+              </div>
+            </li>
+                    <li class="site-nav__item js-nav-item">
+              <a
+                id="nav-explore"
+                class=" site-nav__link"
+                href="{% url 'mentorluk1' %}"
+                data-dropdown="explore"
+                aria-controls="dropdown-explore"
+                
+              >
+                Mentörlük
+              </a>
+              <div class="site-nav__dropdown-container">
+                <div
+    id="dropdown-explore"
+    class="site-nav-dropdown site-nav-dropdown--explore"
+    aria-labelledby="nav-explore"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Mentörlük</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+    
+  <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Mentörlük Nedir ?</h3>
+    <ul class="nav-tease-links__items">
+            <li class="nav-tease-links__item">
+          <a href="{% url 'mentorluk1' %}">
+            Mentörlük - 1
+          </a>
+        </li>
+            <li class="nav-tease-links__item">
+          <a href="{% url 'mentorluk2' %}">
+            Mentörlük - 2
+          </a>
+        </li>
+            
+        </ul>
+  </div>
+  
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">Gerekli Koşullar</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'mentorluk3' %}">
+              Mentörlük - 3
+            </a>
+          </li>
+        
+                            
+          
+        
+      </ul>
+    </div>
+  
+  
+    
+  <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">İletişim</h3>
+      <ul class="nav-tease-links__items">
+                      <li class="nav-tease-links__item">
+                  <a href="{% url 'about_form' %}">
+                      Daha Fazlasını Öğrenmek İçin Lütfen İletişime Geçiniz
+                  </a>
+              </li>
+                      
+              </ul>
+  </div>
+  
+  </div>
+              </div>
+            </li>
+                </ul>
+  
+        <div class="site-nav__buttons">
+          <div class="site-nav__button site-nav__search-trigger">
+            <a href="" class="site-nav__link--search">
+              <svg>
+                <use href="" />
+              </svg><span class="visually-hidden">Search</span>
+            </a>
+          </div>
+  
+          <button class="site-nav__button site-nav__menu-trigger js--menu-close " aria-controls="menu">
+            <div class="site-nav__menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="visually-hidden">Toggle Menu</span>
+            </div>
+          </button>
+        </div>
+      </div>
+  
+        </div>
+  </nav>
+    <div class="menu__content">
+      <details class="menu__item js-accordion">
+        <summary class="menu__item__trigger">
+          Kitaplar
+          <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+            <use href="#caret" />
+          </svg>
+        </summary>
+        <div class="menu__item__panel"><div
+    id="dropdown-books"
+    class="site-nav-dropdown site-nav-dropdown--books"
+    aria-labelledby="nav-books"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Kitaplar</h2>
+      <p class="site-nav-dropdown__description"></p>
+      <a href="{% url 'books' %}" class="site-nav-dropdown__archive-link">Tüm Kitapları İncele</a>
+    </div>
+  
+      <ul class="nav-tease-books">
+                  <li class="nav-tease-books__item">
+          <a href="{% url 'secilmishuzursuzluk' %}" class="nav-tease-books__item-link">
+  
+                        <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+                
+  <div class="book-cover-wrapper">
+      <figure             class="book-cover    ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %} 1331w, {% static 'images/secilmishuzursuzluk.jpg' %} 215w, {% static 'images/secilmishuzursuzluk.jpg' %} 733w, {% static 'images/secilmishuzursuzluk.jpg' %} 768w, {% static 'images/secilmishuzursuzluk.jpg' %} 1099w"
+       data-src="{% static 'images/secilmishuzursuzluk.jpg' %}"
+       data-sizes="auto"
+       alt="Seçilmiş Huzursuzluk"
+  />
+  
+              </figure>
+  </div>
+              </div>
+              <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+                
+  <div class="book-cover-wrapper" style="padding-left:100px;">
+      <figure             class="book-cover  book-cover--even-spacing  ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/secilmishuzursuzluk.jpg' %} 1331w, {% static 'images/secilmishuzursuzluk.jpg' %} 215w, {% static 'images/secilmishuzursuzluk.jpg' %} 733w, {% static 'images/secilmishuzursuzluk.jpg' %} 768w, {% static 'images/secilmishuzursuzluk.jpg' %} 1099w"
+       data-src="{% static 'images/secilmishuzursuzluk.jpg' %}"
+       data-sizes="auto"
+       alt="Seçilmiş Huzursuluk"
+  />
+  
+              </figure>
+  </div>
+              </div>
+            
+            <div class="nav-tease-books__item-text">
+              <h3 class="nav-tease-books__item-title">Seçilmiş Huzursuzluk</h3>
+  
+                            <p class="nav-tease-books__item-subtitle">İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+                        </div>
+          </a>
+        </li>
+                  <li class="nav-tease-books__item">
+          <a href="{% url 'varligiminkabuledildigigun' %}" class="nav-tease-books__item-link">
+  
+                        <div class="nav-tease-books__item-image nav-tease-books__item-image--desktop">
+                
+  <div class="book-cover-wrapper">
+      <figure             class="book-cover    ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+       data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %}215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+       data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+       data-sizes="auto"
+       alt="Varlığımın Kabul Edildiği Gün"
+  />
+  
+              </figure>
+  </div>
+              </div>
+              <div class="nav-tease-books__item-image nav-tease-books__item-image--mobile">
+                
+  <div class="book-cover-wrapper">
+      <figure             class="book-cover  book-cover--even-spacing  ">
+  
+                      
+  <img class="book-cover__cover lazyload js-modal-gallery__hidden"
+  data-srcset="{% static 'images/varligiminkabuledildigigun.jpg' %} 1331w, {% static 'images/varligiminkabuledildigigun.jpg' %}215w, {% static 'images/varligiminkabuledildigigun.jpg' %} 733w, {% static 'images/varligiminkabuledildigigun.jpg' %} 768w, {% static 'images/varligiminkabuledildigigun.jpg' %} 1099w"
+  data-src="{% static 'images/varligiminkabuledildigigun.jpg' %}"
+  alt="Varlığımın Kabul Edildiği Gün"
+   />
+  
+              </figure>
+  </div>
+              </div>
+            
+            <div class="nav-tease-books__item-text">
+              <h3 class="nav-tease-books__item-title">Varlığımın Kabul Edildiği Gün</h3>
+  
+                            <p class="nav-tease-books__item-subtitle">Kör, sağır ve dilsiz çocukların hayata tutunma mücadelesi.</p>
+                        </div>
+          </a>
+        </li>
+                  
+        </ul>
+  
+  </div>
+  </div>
+      </details>
+      <details class="menu__item js-accordion">
+        <summary class="menu__item__trigger">
+          Podcastler
+          <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+            <use href="#caret" />
+          </svg>
+        </summary>
+        <div class="menu__item__panel"><div
+    id="dropdown-podcasts"
+    class="site-nav-dropdown site-nav-dropdown--podcasts"
+    aria-labelledby="nav-podcasts"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Podcastler</h2>
+      <p class="site-nav-dropdown__description"></p>
+      <a href="{% url 'podcast' %}" class="site-nav-dropdown__archive-link">Podcastleri İncele</a>
+    </div>
+  
+      <ul class="nav-tease-podcasts">
+                  <li class="nav-tease-podcasts__item">
+          <a href="{% url 'bencesi' %}" class="nav-tease-podcasts__item-link">
+            <div class="nav-tease-podcasts__item-content">
+              <h3 class="nav-tease-podcasts__item-title">Bencesi</h3>
+  
+                            <p class="nav-tease-podcasts__item-subtitle">Bencesi</p>
+                        </div>
+  
+                        
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-podcasts__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/bencesi.png' %} 870w, {% static 'images/bencesi.png' %} 300w, {% static 'images/bencesi.png' %} 150w, {% static 'images/bencesi.png' %} 768w"
+        data-src="{% static 'images/bencesi.png' %}"
+        data-sizes="auto"
+        alt="Bencesi Podcast"
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                    </a>
+        </li>
+                  
+        </ul>
+  
+  
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">Daha Fazlası</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'podcast' %}">
+              Tüm Postcastler
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  
+  </div>
+  </div>
+      </details>
+      <details class="menu__item js-accordion">
+        <summary class="menu__item__trigger">
+          Yazılar
+          <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+            <use href="#caret" />
+          </svg>
+        </summary>
+        <div class="menu__item__panel"><div
+    id="dropdown-hubs"
+    class="site-nav-dropdown site-nav-dropdown--hubs"
+    aria-labelledby="nav-hubs"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Yazılar</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+        <ul class="nav-tease-hubs">
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'insanauzananyol' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">İnsana Uzanan Yol</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">İnsana Uzanan Yol Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.222222222222%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/insanauzananyol.jpeg' %} 900w, {% static 'images/insanauzananyol.jpeg' %} 300w, {% static 'images/insanauzananyol.jpeg' %} 768w"
+        data-src="{% static 'images/insanauzananyol.jpeg' %}"
+        data-sizes="auto"
+        alt="İnsana Uzanan Yol"
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'gununsonundakimbasariliolacak' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Günün Sonunda Kim Başarılı Olacak ?</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Günün Sonunda Kim Başarılı Olacak ? Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/gununsonunda.jpeg' %} 2280w, {% static 'images/gununsonunda.jpeg' %} 300w, {% static 'images/gununsonunda.jpeg' %} 1024w, {% static 'images/gununsonunda.jpeg' %} 768w, {% static 'images/gununsonunda.jpeg' %} 1536w, {% static 'images/gununsonunda.jpeg' %} 2048w"
+        data-src="{% static 'images/gununsonunda.jpeg' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'beceritoplumundan' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Beceri Toplumundan Varoluş Toplumuna</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Beceri Toplumundan Varoluş Toplumuna Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+    <div class="lazy-img__mod nav-tease-hubs__item-image">
+      <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+      <img class="lazy-img lazyload "
+        data-srcset="{% static 'images/beceritoplumundan.jpeg' %} 2280w, {% static 'images/beceritoplumundan.jpeg' %} 300w, {% static 'images/beceritoplumundan.jpeg' %} 1024w, {% static 'images/beceritoplumundan.jpeg' %} 768w, {% static 'images/beceritoplumundan.jpeg' %} 1536w, {% static 'images/beceritoplumundan.jpeg' %} 2048w"
+        data-src="{% static 'images/beceritoplumundan.jpeg' %}"
+        data-sizes="auto"
+        alt="Beceri Toplumundan Varoluş Toplumuna"
+        data-caption=""
+        data-credit=""
+      >
+    </div>
+  
+                      
+                  </a>
+              </li>
+                                  
+              <li class="nav-tease-hubs__item">
+                  <a href="{% url 'sirketlerkendi' %}" class="nav-tease-hubs__item-link">
+                      <h3 class="nav-tease-hubs__item-title">Şirketler Kendi Mezunlarını Yetiştirirse</h3>
+  
+                                              <p class="nav-tease-hubs__item-subtitle">Şirketler Kendi Mezunlarını Yetiştirirse Ön Söz</p>
+                      
+                                              
+  
+  
+      
+      
+                                              <div class="lazy-img__mod nav-tease-hubs__item-image">
+                                                <span class="lazy-img__placeholder" style="padding-top: 77.19298245614%"></span>
+                                                <img class="lazy-img lazyload "
+                                                  data-srcset="{% static 'images/sirketlerkendimezun.jpeg' %} 2280w, {% static 'images/sirketlerkendimezun.jpeg' %} 300w, {% static 'images/sirketlerkendimezun.jpeg' %} 1024w, {% static 'images/sirketlerkendimezun.jpeg' %} 768w, {% static 'images/sirketlerkendimezun.jpeg' %} 1536w, {% static 'images/sirketlerkendimezun.jpeg' %} 2048w"
+                                                  data-src="{% static 'images/sirketlerkendimezun.jpeg' %}"
+                                                  data-sizes="auto"
+                                                  alt="Beceri Toplumundan Varoluş Toplumuna"
+                                                  data-caption=""
+                                                  data-credit=""
+                                                >
+                                              </div>
+  
+                      
+                  </a>
+              </li>
+              </ul>
+  
+  
+    </div>
+  </div>
+      </details>
+      
+  
+      <details class="menu__item js-accordion">
+        <summary class="menu__item__trigger">
+          Mentörlük
+          <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+            <use href="#caret" />
+          </svg>
+        </summary>
+        <div class="menu__item__panel"><div
+    id="dropdown-explore"
+    class="site-nav-dropdown site-nav-dropdown--explore"
+    aria-labelledby="nav-explore"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Keşfet</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+    
+  <div class="nav-tease-links">
+    <h3 class="nav-tease-links__title">Mentörlük Nedir ?</h3>
+    <ul class="nav-tease-links__items">
+            <li class="nav-tease-links__item">
+          <a href="{% url 'mentorluk1' %}">
+            Mentörlük Tanım - 1
+          </a>
+        </li>
+            <li class="nav-tease-links__item">
+          <a href="{% url 'mentorluk2' %}">
+            Mentörlük Tanım - 2
+          </a>
+        </li>
+            
+        </ul>
+  </div>
+  
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">Mentörlük Hizmeti</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'mentorluk3' %}">
+              Gerekli Koşullar
+            </a>
+          </li>
+        
+                            
+          
+        
+        
+      </ul>
+    </div>
+  
+  
+    
+  <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">İletişim</h3>
+      <ul class="nav-tease-links__items">
+                      <li class="nav-tease-links__item">
+                  <a href="{% url 'about_form' %}">
+                      Daha Fazlasını Öğrenmek İçin Bizimle İletişime Geçebilirsiniz
+                  </a>
+              </li>
+                      
+              </ul>
+  </div>
+  
+  </div>
+  </div>
+      </details>
+  
+  
+      <details class="menu__item js-accordion">
+        <summary class="menu__item__trigger">
+          Hakkında
+          <svg class="menu__item__caret" width="10" height="6" aria-hidden="true">
+            <use href="#caret" />
+          </svg>
+        </summary>
+        <div class="menu__item__panel"><div
+    id="dropdown-about"
+    class="site-nav-dropdown site-nav-dropdown--about"
+    aria-labelledby="nav-about"
+  >
+    <div class="site-nav-dropdown__intro">
+      <h2 class="site-nav-dropdown__title">Hakkında</h2>
+      <p class="site-nav-dropdown__description"></p>
+    </div>
+  
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">Keşfet</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'about' %}">
+              Hakkında
+            </a>
+          </li>
+        
+                            
+          
+        
+        
+      </ul>
+    </div>
+  
+  
+      
+      <div class="nav-tease-links">
+      <h3 class="nav-tease-links__title">İletişim</h3>
+      <ul class="nav-tease-links__items">
+        
+                            
+          <li class="nav-tease-links__item">
+            <a href="{% url 'about_form' %}">
+              Bizimle İletişime Geç
+            </a>
+          </li>
+        
+                            
+          
+        
+        
+      </ul>
+    </div>
+  
+  
+    
+  
+    
+  </div>
+  </div>
+      </details>
+      
+    </div>
+  </nav>

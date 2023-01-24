@@ -1,0 +1,20 @@
+{% extends 'aMainApp/layout.html' %}
+{% load static %}
+
+
+{% block content %}
+
+  <section class="general_content">
+    <div class="content" style="max-width:1200px;">
+  <h2 style="text-align: center;">{{ makaleismi }}<br /></h2>
+  <img src="{% static 'images/secilmis.jpg' %}" alt="" style="max-width:400px; max-height:600px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #ddd; border-radius: 10px; padding: 5px;">
+  <p>
+  <pre style=" font-family: 'Lora'; font-size:21px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+  {{ makale }}
+  </pre>
+  </p>
+
+  </div>
+  </section>
+
+{% endblock %}

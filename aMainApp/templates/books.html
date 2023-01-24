@@ -1,0 +1,393 @@
+{% extends 'aMainApp/layout.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+  .site-nav .site-nav__logo, .site-nav .site-nav-list > .site-nav__item >
+  a, .site-nav .site-nav__buttons,
+  .site-nav .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: white;
+  }
+
+  .site-nav .site-nav__top-level::after {
+      background-color: white;
+  }
+
+  .site-nav.active .site-nav__logo, .site-nav.active .site-nav-list > .site-nav__item >
+  a, .site-nav.active .site-nav__buttons, .site-nav.active .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: black;
+  }
+
+
+  .container {
+    padding-top:30px;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    background-color: var(--light-theme);
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--color);
+    transition: all 0.3s;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 6px 30px -10px #cccccc;
+  }
+  .btn:hover {
+    transform: translateX(5px) translateY(-7px);
+  }
+  
+  .shop-now {
+    position: relative;
+  }
+  .shop-now .santa-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -17px;
+    right: -20px;
+    transform: rotate(14deg);
+  }
+  .shop-now .santa-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .snowflake-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 5px;
+    width: 100px;
+    transform: scale(0.4);
+  }
+  .snowflake-grid div {
+    border-radius: 5px;
+  }
+  .snowflake-grid .snowflake-item {
+    position: relative;
+  }
+  
+  .to-left {
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    animation: swing 3s infinite;
+  }
+  .to-left div {
+    animation: flash 3s infinite;
+  }
+  
+  .to-right {
+    position: absolute;
+    top: -25px;
+    right: -35px;
+    animation: swing 2.5s infinite;
+  }
+  .to-right div {
+    animation: flash 2.5s infinite;
+  }
+  
+  .border-left {
+    border-left: 4px solid #e6dada;
+  }
+  
+  .border-right {
+    border-right: 4px solid #e6dada;
+  }
+  
+  .border-bottom {
+    border-bottom: 4px solid #e6dada;
+  }
+  
+  .border-top {
+    border-top: 4px solid #e6dada;
+  }
+  
+  .sub-items {
+    height: 28px;
+    width: 28px;
+  }
+  
+  .m-w-15 {
+    width: 15px;
+  }
+  
+  .m-h-15 {
+    height: 15px;
+  }
+  
+  .r-270 {
+    transform: rotate(270deg);
+  }
+  
+  .r-180 {
+    transform: rotate(180deg);
+  }
+  
+  .r-90 {
+    transform: rotate(90deg);
+  }
+  
+  .pull-down {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .pull-down-right {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  .pull-right {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  
+  .pull-left {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  
+  .m-3 {
+    margin: 3px;
+  }
+  
+  @keyframes swing {
+    50% {
+      transform: rotateZ(10deg) scale(0.4);
+    }
+  }
+  @keyframes flash {
+    50% {
+      border-color: #485563;
+    }
+  }
+
+</style>
+<section class="home__hero fullbleed  mobile"
+style="background-image:url('/static/images/tamkarartma.jpg'); max-height:580px; opacity: 2.4; "> <!-- ANA SAYFA ARKA PLAN!!  -->
+
+   <div class="mobile-background" style="background-image:url('/static/images/tamkarartma.jpg');">
+           
+           <div class="content" style="">
+                       <h1>  <!-- ANA SAYFA H1  --></h1>
+                                           
+</div>
+       </div>
+</section>
+
+
+<h1 class="page__topper__title" style="padding-top:50px;">‘’İyi bir kitap, gerçek bir hazinedir.’’ </h1>
+<p style="text-align: center; font-size:30px;">
+  -Bulwer Lytton
+</p> 
+
+<ul class="ais-Hits-list" style="list-style:none ;"> <br><br>
+  <hr>
+  <li class="ais-Hits-item" style="::-webkit-details-marker {   display:none; }">
+    <article class="archive-item archive-item--hub theme--atlas-medium">
+      <div class="archive-item__image__wrapper">
+        <a href="{% url 'secilmishuzursuzluk' %}" class="tease__image__link tease__image__link--archive-item tease__image__link--hub--other" title="">
+          <div class="tease__image__size">
+            <img data-src="{% static 'images/secilmis.png' %}" 
+            alt="" 
+            data-srcset="{% static 'images/secilmis.png' %} 300w, {% static 'images/secilmis.png' %} 768w, {% static 'images/secilmis.png' %} 900w" 
+            data-sizes="auto" 
+            class="lazy-img tease__image__mod js-modal-gallery__hidden lazyautosizes ls-is-cached lazyloaded" 
+            sizes="422px" 
+            srcset="{% static 'images/secilmis.png' %} 300w, {% static 'images/secilmis.png' %} 768w, {% static 'images/secilmis.png' %} 900w" 
+            src="{% static 'images/secilmis.png' %}">
+          </div>
+        </a>
+      </div>
+      
+      <div class="archive-item__text-content">
+        <a href="" class="archive-item__overline" title="">Kitap</a>
+        <a href="{% url 'secilmishuzursuzluk' %}" class="archive-item__title__link">
+          
+          <h1 class="archive-item__title"></h1>
+        </a>
+        <div class="archive-item__description" style="font-family: 'Lora'; font-size:20px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+          <p>Buğdaycı, Seçilmiş Huzursuzluk romanında hayatın amacını sorgulamaktadır. Romanı yazmadaki amacı şu sorulara cevap bulmaktı. ‘’İnsan midesi olmasaydı, hayatın amacı ne olurdu? İnsan hayal kurmaya, çalışmaya ve kendini gerçekleştirmeye yönelik eylemlerde bulunur muydu? Peki insan midesinin olmadı bir hayat, nasıl bir hayat olurdu?’’ Bu soruların cevaplarını merak eden Buğdaycı, Seçilmiş Huzursuzluk romanını yazdı. Romanda psikolojik çözümlemelere çok sık rastlanmaktadır. Bu romanı okuyan her insan hayatı sorgulamaya ve daha anlamlı bir yaşam için mücadele etmeye başlamıştır. Buğdaycı’nın psikolog olması, romanlarının okunmasında ve binlerce kitle tarafından başka insanlara tavsiye edilmesinde önemli bir etken. </p>
+        </div>
+        
+
+        <div class="container">
+          <div class="btn">
+             <div class="shop-now"> <a href="https://www.dr.com.tr/kitap/secilmis-huzursuzluk/cihan-bugdayci/edebiyat/roman/turkiye-roman/urunno=0001950432001">Satın Al</a> </div>
+             <div class="snowflake-grid to-left">
+                <div class="snowflake-item border-bottom border-right">
+                   <div class="sub-items border-right border-bottom pull-down">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-bottom border-left">
+                   <div
+                      class="sub-items border-right border-bottom r-90 pull-down-right"
+                      >
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-right">
+                   <div class="sub-items border-right border-bottom r-270 pull-right">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-left">
+                   <div class="sub-items border-right border-bottom r-180 pull-left">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+             </div>
+             <div class="snowflake-grid to-right">
+                <div class="snowflake-item border-bottom border-right">
+                   <div class="sub-items border-right border-bottom pull-down">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-bottom border-left">
+                   <div
+                      class="sub-items border-right border-bottom r-90 pull-down-right"
+                      >
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-right">
+                   <div class="sub-items border-right border-bottom r-270 pull-right">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-left">
+                   <div class="sub-items border-right border-bottom r-180 pull-left">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+
+
+
+
+      </div>
+    </article>
+  </li>
+
+
+
+  <hr>
+
+
+
+
+  <li class="ais-Hits-item">
+    <article class="archive-item archive-item--hub theme--daring-classrooms-dark">
+      <div class="archive-item__image__wrapper">
+        <a href="{% url 'varligiminkabuledildigigun' %}" class="tease__image__link tease__image__link--archive-item tease__image__link--hub--other" title="">
+          <div class="tease__image__size">
+            <img data-src="{% static 'images/varligim.jpg' %}" alt="" 
+            data-srcset="{% static 'images/varligim.jpg' %} 300w, {% static 'images/varligim.jpg' %} 1024w, {% static 'images/varligim.jpg' %} 768w, {% static 'images/varligim.jpg' %} 1536w, {% static 'images/varligim.jpg' %} 2048w" 
+            data-sizes="auto" {
+            class="lazy-img tease__image__mod js-modal-gallery__hidden lazyautosizes ls-is-cached lazyloaded" 
+            sizes="422px" 
+            srcset="{% static 'images/varligim.jpg' %} 300w, {% static 'images/varligim.jpg' %} 1024w, {% static 'images/varligim.jpg' %} 768w, {% static 'images/varligim.jpg' %} 1536w, {% static 'images/varligim.jpg' %} 2048w" 
+            src="{% static 'images/varligim.jpg' %}">
+          </div>
+        </a>
+      </div>
+      <div class="archive-item__text-content">
+        <a href="" class="archive-item__overline" title="">Kitap</a>
+        <a href="{% url 'varligiminkabuledildigigun' %}" class="archive-item__title__link">
+          <h1 class="archive-item__title"></h1>
+        </a>
+        <div class="archive-item__description" style="font-family: 'Lora'; font-size:20px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+          <p>Cihan Buğdaycı’nın ilk romanı olan Varlığımın Kabul Edildiği Gün kör sağır ve dilsiz çocukların hayata tutunma mücadelesini anlatmaktadır. Kör, sağır ve çocukların olduğu bir okulda, bir profesör bu çocukları kelimelerle tedavi etmektedir. Bu kitapta empatinin önemine değinen Buğdaycı, okuyucularda yeni bakış açıları oluşturmaktadır. Engelli çocukların hayatı yeniden keşfetmesini ve dünyayı anlamlandırmalarını konu alan bu roman, binlerce okuyucunun daha duyarlı olmasını sağlamıştır. Varlığımın Kabul Edildiği Gün kitabı, engelli çocuğu olan binlerce aile ve Özel Eğitim Öğretmenleri tarafından tercih edilmektedir. Bu kitap birçok ailenin ve öğretmenin, engelli çocuklarla doğru empati kurabilmeleri için bir başucu romanı olmuştur. </p>
+        </div>
+
+
+
+        <div class="container">
+          <div class="btn">
+             <div class="shop-now"> <a href="https://www.dr.com.tr/kitap/varligimin-kabul-edildigi-gun/edebiyat/roman/turkiye-roman/urunno=0001704173001">Satın Al</a> </div>
+             <div class="snowflake-grid to-left">
+                <div class="snowflake-item border-bottom border-right">
+                   <div class="sub-items border-right border-bottom pull-down">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-bottom border-left">
+                   <div
+                      class="sub-items border-right border-bottom r-90 pull-down-right"
+                      >
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-right">
+                   <div class="sub-items border-right border-bottom r-270 pull-right">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-left">
+                   <div class="sub-items border-right border-bottom r-180 pull-left">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+             </div>
+             <div class="snowflake-grid to-right">
+                <div class="snowflake-item border-bottom border-right">
+                   <div class="sub-items border-right border-bottom pull-down">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-bottom border-left">
+                   <div
+                      class="sub-items border-right border-bottom r-90 pull-down-right"
+                      >
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-right">
+                   <div class="sub-items border-right border-bottom r-270 pull-right">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+                <div class="snowflake-item border-top border-left">
+                   <div class="sub-items border-right border-bottom r-180 pull-left">
+                      <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+
+
+
+
+      </div>
+    </article>
+  </li>
+
+
+
+  <hr>
+
+
+
+
+
+
+</ul>
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'aMainApp/layout.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<style>
+  .site-nav .site-nav__logo, .site-nav .site-nav-list > .site-nav__item >
+  a, .site-nav .site-nav__buttons,
+  .site-nav .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: white;
+  }
+
+  .site-nav .site-nav__top-level::after {
+      background-color: white;
+  }
+
+  .site-nav.active .site-nav__logo, .site-nav.active .site-nav-list > .site-nav__item >
+  a, .site-nav.active .site-nav__buttons, .site-nav.active .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: black;
+  }
+
+</style>
+
+<section class="home__hero fullbleed  mobile"
+style="background-image:url('/static/images/imza.jpg'); max-height:1500px; opacity: 2.4; "> <!-- ANA SAYFA ARKA PLAN!!  -->
+
+   <div class="mobile-background" style="background-image:url('/static/images/imza.jpg');">
+           
+           <div class="content" style="">
+                       <h1>  <!-- ANA SAYFA H1  --></h1>
+                                           
+</div>
+       </div>
+</section>
+
+
+
+<h1 class="page__topper__title" style="padding-top:100px;">Hoş geldiniz</h1> 
+
+
+{% for element in yazilar %}
+
+<ul class="ais-Hits-list" style="list-style:none ;"> <br><br>
+  <hr>
+  <li class="ais-Hits-item">
+    <article class="archive-item archive-item--hub theme--atlas-medium">
+      <div class="archive-item__image__wrapper">
+        <a href="" class="tease__image__link tease__image__link--archive-item tease__image__link--hub--other" title="İnsana Uzanan Yol">
+          <div class="tease__image__size">
+            <img data-src="{{ makale5Fotograf }}" 
+            alt="" 
+            data-srcset="{{ makale5Fotograf }} 300w, {{ makale5Fotograf }} 768w, {{ makale5Fotograf }} 900w" 
+            data-sizes="auto" 
+            class="lazy-img tease__image__mod js-modal-gallery__hidden lazyautosizes ls-is-cached lazyloaded" 
+            sizes="422px" 
+            srcset="{{ makale5Fotograf }} 300w, {{ makale5Fotograf }} 768w, {{ makale5Fotograf }} 900w" 
+            src="{{ makale5Fotograf }}">
+          </div>
+        </a>
+      </div>
+      
+      <div class="archive-item__text-content">
+        <a href="{% url 'articles' %}" class="archive-item__overline" title="">Makale</a>
+        <a href="" class="archive-item__title__link">
+          
+          <h1 class="archive-item__title">{{ makale5ismi }}</h1>
+        </a>
+        <div class="archive-item__description">
+          <p></p>
+        </div>
+      </div>
+    </article>
+  </li>
+  
+  <hr>
+</ul>
+
+
+{% endfor %}
+  
+
+{% endblock %}

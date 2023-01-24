@@ -1,0 +1,922 @@
+{% extends 'aMainApp/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+  .site-nav .site-nav__logo, .site-nav .site-nav-list > .site-nav__item >
+  a, .site-nav .site-nav__buttons,
+  .site-nav .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: white;
+  }
+
+  .site-nav .site-nav__top-level::after {
+      background-color: white;
+  }
+
+  .site-nav.active .site-nav__logo, .site-nav.active .site-nav-list > .site-nav__item >
+  a, .site-nav.active .site-nav__buttons, .site-nav.active .site-nav__menu-icon span:not(:nth-child(5)) {
+      color: black;
+  }
+
+</style>
+
+<section class="home__hero fullbleed  mobile"
+style="background-image:url('/static/images/background.jpg');"> <!-- ANA SAYFA ARKA PLAN!!  -->
+
+   <div class="mobile-background" style="background-image:url('/static/images/background3.jpg');">
+           
+           <div class="content" style="">
+                       <h1>İnsanın İçi Büyükse <br> Dünya Küçüktür.  <!-- ANA SAYFA H1  --></h1>
+                                           
+</div>
+       </div>
+</section>
+
+<header class="home__topper">
+<h1 class="visually-hidden"></h1>
+<section>
+<h1 class="visually-hidden"></h1>
+
+<aside class="related-content">
+<h1 class="visually-hidden"></h1>
+ <section>
+<h1 class="visually-hidden"></h1>
+   
+   <article class="related--feature post">
+<div class="related--feature__text">
+<span class="related--feature__label">2021 TOYP Türkiye</span>
+<div class="related--feature__post-content">
+<h2 class="related--feature__title">
+<a href="{% url 'haberler' %}"
+             onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;internal link&quot;,&quot;ga-event-action&quot;:&quot;Home Featured&quot;,&quot;ga-event-label&quot;:&quot;Creating Space&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Dive In Link&quot;})" >Axa Sigorta İnsanlığa ve Gönüllü Kuruluşlara Hizmet Kategorisinde</a>
+</h2>
+ <div class="related--feature__description">
+<p>Cihan Buğdaycı Birincilikle Onurlandırıldı.</p>
+</div>
+</div>
+<a href="{% url 'haberler' %}"  onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;internal link&quot;,&quot;ga-event-action&quot;:&quot;Home Featured&quot;,&quot;ga-event-label&quot;:&quot;Creating Space&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Dive In Link&quot;})"        class="related--feature__cta">
+Okumaya Haberler Bölümünde Devam Et
+</a>
+</div>
+
+<a href="{% url 'haberler' %}" title="" style="max-height:600px; max-width:400px;" onclick="dataLayer.push({&quot;ga-event-category&quot;:&quot;internal link&quot;,&quot;ga-event-action&quot;:&quot;Home Featured&quot;,&quot;ga-event-label&quot;:&quot;Creating Space&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Dive In Link&quot;})" class="related--feature__image__link">
+
+<!--  ana sayfanın hemen altında ki section ilk fotoğraf   -->
+<img class="lazy-img lazyload tease__image js-modal-gallery__hidden" 
+data-srcset=" /static/images/odultoreni.jpg 150w, "
+data-src="/static/images/odultoreni.jpg"
+data-sizes="1000px"
+alt=""
+data-caption=""
+data-credit=""
+>
+</a>
+</article>
+</section>
+
+<!-- Yorum Slider Başlangıç -->
+<head>
+    <style>
+       
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background-color: rgb(228,238,226);
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    background-color: rgb(228,238,226);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+  
+}
+
+/* Add an italic font style to all quotes */
+q {}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}      
+          
+    </style>
+</head>
+<section style="background-color: rgb(228,238,226); font-family: 'Lora'; font-size:25px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+<div class="slideshow-container">
+
+    <div class="mySlides">
+      <q>Hayatınızın olumlu yönde değiştiği bir süreç vardır. Cihan Buğdaycı benim hayatımın bu değişimindeki en önemli rolü oynadı. Bana çok iyi bir mentor, abi oldu. Yıkıcı değil yapıcı eleştirilerle gelişim sürecimin sağlıklı ve hızlı ilerlemesini sağladı. Dünya insanı olma yolunda ilerlerken bana çok önemli katkılarda bulundu. Tanıştığım insanlar, bulunduğum ekosistemler, birlikte çalıştığım insanlar onun sayesinde olumlu yönde değişti. Olmak istediğim kişiye Cihan Buğdaycı sayesinde dönüşmeye başladım. </q>
+      <p class="author">- Alper Atalı</p>
+    </div>
+    
+    <div class="mySlides">
+      <q>Cihan Bey Alper’e hayatının en önemli dönemlerinde birçok noktada destek oldu ve anlam kattı. Cihan Bey iyi bir lider olarak Alper’e problemlerle nasıl başa çıkabileceğini, kriz anlarını en doğru şekilde nasıl yönetebileceğini öğretti. Aynı zamanda özgüvenli bir birey olmasını sağlayarak da kişisel gelişimine önemli bir katkıda bulundu. Alper’in Cihan Bey sayesinde dönüştüğü insan aile içerisindeki ilişkilerimi de çok iyi etkiledi. Kalbinin güzelliği yüzüne yansımış Cihan Bey’e teşekkürlerimizi iletiyoruz.</q>
+      <p class="author">- Atalı Ailesi</p>
+    </div>
+    
+    <div class="mySlides">
+      <q>Hayatımda yaşanan en büyük değişikler, lise dönemim içerisinde kurduğum bazı bağlantılar sayesinde gerçekleşti. Bu bağlantılar arasında en büyük etkiyi oluşturan ise şüphesiz olarak Cihan Buğdaycıydı. İlk olarak lise çağında bir genç olsam bile kendime güvenerek neler yapabileceğimi fark etmemi sağladı. Kendisi “kişisel gelişim sürecimi nasıl daha verimli hale getirebilirim?” sorusuna sıkça cevap bulmamı sağladı ve hayatımda bir rol model oldu. 21.yy için yetkin birer genç olmayı ondan öğrendim.</q>
+      <p class="author">- Alperen Lermi</p>
+    </div>
+
+    <div class="mySlides">
+        <q>Cihan Buğdaycı benim hayatımı değiştiren kişi oldu. Herkes başaramazsın derken o başarabilirsin dedi. Her zaman büyük bir destekçi olarak karşımızdaydı ve özgüven kazanmamda büyük rol oynadı.</q>
+        <p class="author">- Efe Demirkaya</p>
+    </div>
+
+    <div class="mySlides">
+        <q>Çocuğumuzun gelişimini gözlemdiğimizde Cihan Buğdaycı’nın etkisini her zaman gördük ona sadece bir mentor veya abi olmadı onun için bir idol oldu. Bizim için Cihan Buğdaycı fazlasıyla değerli.</q>
+        <p class="author">- Demirkaya Ailesi</p>
+    </div>
+    
+
+    <div class="mySlides">
+        <q>Kişisel gelişim sürecimizde en çok destek ihtiyacı duyduğumuz kişiler mentorlerimiz oluyor. Lise yıllarımda Cihan Buğdaycı’nın hayatımda olması, yaptığı geri bildirimler ve verdiği destek ile yaşadığım süreçleri doğru yönetmemi sağladı. 21. Yüzyıl Yetkinliklerine sahip bir genç olmamı sağlayarak kendimi yeni dünyaya hazırlamam konusunda etkisi çok büyük. Öğrenirken öğrettiğim bir hayat tarzı benimsemem gerektiğini, açık görüşlülük ve sağlıklı iletişimin ne kadar önemli olduğunu öğrenmemde katkıları yadsınamaz. </q>
+        <p class="author">- Şevval Yoldaş</p>
+    </div>
+
+
+    <div class="mySlides">
+        <q>Kızımızın kendini geliştiren bir birey olmak istediğinin her zaman farkındaydık. Gelişim sürecinde Cihan Buğdaycı ile tanışarak kendisini nasıl geliştirmesi gerektiği yönünde birçok şey öğrendi. Hem kişisel hayatını hem de kariyer hayatını önemli ve olumlu ölçüde etkilediği için çok mutluyuz.  </q>
+        <p class="author">- Yoldaş Ailesi</p>
+    </div>
+
+    <div class="mySlides">
+        <q>3 senelik Kolektif Future serüvenimizde bizlere hem abilik hem mentorlük yapan Cihan Buğdaycı `nın bana gelişim sürecimde büyük katkıları oldu. Sosyalleşme ve kendimi ifade etme noktasında benim üzerimde büyük etkileri olduğunu söyleyebilirim. Kişisel gelişimimiz için çabaladığımız sürecimizde verdiği tavsiyeler ve öğütler sayesinde kendimizi keşfetme imkanı bulduk. Kendimi keşfetme sürecimde bana büyük katkıları olan Cihan Buğdaycı sayesinde şuan kararlarım doğrultusunda çok daha emin ve cesur adımlar atabiliyorum.  </q>
+        <p class="author">- İlayda Sur</p>
+    </div>
+
+    <div class="mySlides">
+        <q>İlayda Kolektif Future süreci boyunca kendini geliştirme noktasında çalışmalar yaptı. Bu çalışmalarda en büyük destekçisi ve mentorü Cihan Buğdaycı oldu. İlayda bu süreçte daha sosyal ve çalışkan bir insan oldu. İlayda`nın gelişimini görmek bizleri çok mutlu ediyor. Bu gelişim sürecinde Cihan Buğdaycı`nın ilayda üzerinde büyük emekleri ve desteklerinin olduğunu görebiliyoruz. Yazdığı kitaplar sayesinde bizler de Cihan Buğdaycı` dan mentorlük almış gibi olduk. Kitaplarını okumak bizlere kitap okumayı sevdirdi. Ailemizin gelişimini de sağladı. </q>
+        <p class="author">- Sur Ailesi</p>
+    </div>
+
+
+    <div class="mySlides">
+        <q>Kolektif Future'da üç dönem boyunca Cihan Buğdaycı'dan aldığım eğitimler, tavsiyeler ve sorumluluklarıma yaklaşım şeklimde bana kazandırdığı vizyon sayesinde neler üstüne çalışmayı sevdiğimi, nasıl çalışmam gerektiğini bana gösterdi. Bu katkılar beni de ailemi de mutlu kılıyor.</q>
+        <p class="author">- Emre Tunç Yılmaz</p>
+    </div>
+
+    <div class="mySlides">
+        <q>Cihan Bey her şeyden önce iyi bir abi. Yönlendirmeleri, planlamaları doğru ve zamanında. İyi bir eğitmen. Ve kendini çok güzel yenileyebilen, geliştiren ve bu süreçleri çocuklara çok güzel ve yerinde iyileştiren çok başarılı bir lider. Cihan Bey iyi ki varsınız. Teşekkürler.</q>
+        <p class="author">- Yılmaz Ailesi</p>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span>  
+      <span class="dot" onclick="currentSlide(7)"></span>  
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </section>
+  
+
+<!-- Yorum Slider Bitiş -->
+
+
+<section class="teases teases--has-3">
+<h1 class="teases__overline visually-hidden">
+
+</h1>
+<ul class="teases__list">
+    <li class="related--tease__li">
+               
+ 
+
+
+
+
+
+        <article class="tease--vertical tease--vertical--video related--tease">
+        
+        
+        
+        
+        <!-- Video Linkini aşşağıda ver! -->
+        <a href="https://www.youtube.com/watch?v=lktvDHJ1rns" class="tease__image__link tease__image__link--video" title="Üniversitelerde eğitim ve tercih dönemi">
+        <div class="tease__image__size">
+        
+        
+        
+        
+        
+        <div class="lazy-img__mod tease__image__mod js-modal-gallery__hidden">
+        <span class="lazy-img__placeholder" style="padding-top: 56.25%"></span>
+        <img class="lazy-img lazyload tease__image js-modal-gallery__hidden"
+        data-srcset="{% static 'images/basariyadogru.png' %} 2560w, {% static 'images/basariyadogru.png' %} 300w, {% static 'images/basariyadogru.png' %} 1024w, {% static 'images/basariyadogru.png' %} 768w, {% static 'images/basariyadogru.png' %} 1536w, {% static 'images/basariyadogru.png' %} 2048w"
+        data-src="{% static 'images/basariyadogru.png' %}"
+        data-sizes="auto"
+        alt=""
+        data-caption=""
+        data-credit=""
+        >
+        </div>
+        
+        <div class="tease__image__play-icon__wrapper">
+        <svg class="tease__image__play-icon" role="presentation">
+        <use href=""/>
+        </svg>
+        </div>
+        </div>
+        </a>
+        <a
+        class="tease__overline"
+        href="https://www.youtube.com/watch?v=lktvDHJ1rns"
+        title=""
+        style="font-family: 'Lora'; font-size:16px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+        Video
+        
+        </a>
+        
+        <a class="tease__title__link" href="https://www.youtube.com/watch?v=lktvDHJ1rns"  onclick='dataLayer.push({&quot;ga-event-category&quot;:&quot;internal link&quot;,&quot;ga-event-action&quot;:&quot;Home Featured&quot;,&quot;ga-event-label&quot;:&quot;Bren\u00e9 Brown: Atlas of the Heart&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Dive In Link&quot;})' >
+        <h1 class="tease__title">
+            Üniversitelerde eğitim ve tercih dönemine dair merak edilenler
+        </h1>
+        
+        
+        </a>
+        
+        <div class="tease__description">
+        <p style="font-family: 'Lora'; font-size:20px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">CNN TÜRK Başarıya Doğru Programı</p>
+        </div>
+        
+        </article>
+        </li>
+
+
+
+
+                     <li class="related--tease__li">
+               
+ 
+
+
+
+
+
+<article class="tease--vertical tease--vertical--video related--tease">
+
+
+
+
+<!-- Video Linkini aşşağıda ver! -->
+<a href="https://www.youtube.com/watch?v=sFewHY2yNtA&t=5s" class="tease__image__link tease__image__link--video" title="Cihan Buğdaycı: Genç Lider Olmak">
+<div class="tease__image__size">
+
+
+
+
+
+<div class="lazy-img__mod tease__image__mod js-modal-gallery__hidden">
+<span class="lazy-img__placeholder" style="padding-top: 56.25%"></span>
+<img class="lazy-img lazyload tease__image js-modal-gallery__hidden"
+data-srcset="{% static 'images/yenigelecekicin.png' %} 2560w, {% static 'images/yenigelecekicin.png' %} 300w, {% static 'images/yenigelecekicin.png' %} 1024w, {% static 'images/yenigelecekicin.png' %} 768w, {% static 'images/yenigelecekicin.png' %} 1536w, {% static 'images/yenigelecekicin.png' %} 2048w"
+data-src="{% static 'images/yenigelecekicin.png' %}"
+data-sizes="auto"
+alt=""
+data-caption=""
+data-credit=""
+>
+</div>
+
+<div class="tease__image__play-icon__wrapper">
+<svg class="tease__image__play-icon" role="presentation">
+<use href=""/>
+</svg>
+</div>
+</div>
+</a>
+<a
+class="tease__overline"
+href="https://www.youtube.com/watch?v=sFewHY2yNtA&t=5s"
+title="">
+Video
+
+</a>
+
+<a class="tease__title__link" href="https://www.youtube.com/watch?v=sFewHY2yNtA&t=5s"  onclick='dataLayer.push({&quot;ga-event-category&quot;:&quot;internal link&quot;,&quot;ga-event-action&quot;:&quot;Home Featured&quot;,&quot;ga-event-label&quot;:&quot;Bren\u00e9 Brown: Atlas of the Heart&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Dive In Link&quot;})' >
+<h1 class="tease__title">
+Cihan Buğdaycı: Yeni Gelecekte Genç Lider Olmak
+</h1>
+
+
+</a>
+
+<div class="tease__description">
+<p></p>
+</div>
+
+</article>
+</li>
+                     <li class="related--tease__li">
+               
+ 
+
+
+
+
+
+<article class="tease--vertical tease--vertical--podcast-episode theme--worn-leather-dark related--tease">
+
+
+
+
+
+<a href="{% url 'podcast' %}"  onclick='dataLayer.push({&quot;ga-event-category&quot;:&quot;internal link&quot;,&quot;ga-event-action&quot;:&quot;Home Featured&quot;,&quot;ga-event-label&quot;:&quot;&lt;em&gt;Atlas of the Heart&lt;\/em&gt;, Audience Q&amp;#038;A, Part 2 of 2&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Dive In Link&quot;}) '  class="tease__image__link tease__image__link--podcast-episode theme--worn-leather-dark" title="İşi Uzmanından Dinleyin">
+<div class="tease__image__size">
+
+
+
+
+
+<div class="lazy-img__mod tease__image__mod js-modal-gallery__hidden">
+<span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+<img class="lazy-img lazyload tease__image js-modal-gallery__hidden"
+data-srcset="{% static 'images/bencesi.png' %} 1200w, {% static 'images/bencesi.png' %} 300w, {% static 'images/bencesi.png' %} 1024w, {% static 'images/bencesi.png' %} 150w,{% static 'images/bencesi.png' %} 768w"
+data-src="{% static 'images/bencesi.png' %}"
+data-sizes="auto"
+alt=""
+data-caption=""
+data-credit=""
+>
+</div>
+
+</div>
+</a>
+<a
+class="tease__overline"
+href="https://open.spotify.com/show/1ULQCXKAyM8rchDzJnr1Mt"
+title=""
+style="font-family: 'Lora'; font-size:20px; line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+Podcastimizi İnceleyin.
+
+</a>
+
+<a class="tease__title__link" href="{% url 'podcast' %}"  onclick='dataLayer.push({&quot;ga-event-category&quot;:&quot;internal link&quot;,&quot;ga-event-action&quot;:&quot;Home Featured&quot;,&quot;ga-event-label&quot;:&quot;&lt;em&gt;Atlas of the Heart&lt;\/em&gt;, Audience Q&amp;#038;A, Part 2 of 2&quot;,&quot;ga-event-non-interaction&quot;:false,&quot;event&quot;:&quot;GA Event Dive In Link&quot;})' >
+<h1 class="tease__title" style="font-family: 'Lora';  line-height: 1.58; letter-spacing: -0.03px; color: rgba(0, 0, 0, 0.68);">
+Bencesi Podcast, Cihan Buğdaycı &#038; Salih Torun
+</h1>
+
+<span class="tease__subtitle">
+
+</span>
+
+</a>
+
+<div class="tease__description">
+<p></p>
+</div>
+
+</article>
+</li>
+                 </ul>
+</section>
+
+</aside>
+
+
+
+
+
+<section class="home__featured__mobile">
+<h1 class="visually-hidden"></h1>
+
+
+
+<ul class="home__slider__list js-featured-mobile-slider slider__list">
+                                 <li class="home__slider__item">
+               
+<article class="tease--horizontal tease--horizontal--podcast-episode theme--arapawa-dark">
+<a href="/podcast" class="tease--horizontal__link">
+<div class="tease--horizontal__inner">
+
+ <figure class="tease--horizontal__image__size tease--horizontal__image__size--podcast-episode js-modal-gallery__hidden" style="max-height:300px;">
+                       
+
+
+
+
+<div class="lazy-img__mod " >
+<span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+<img class="lazy-img lazyload tease--horizontal__image js-modal-gallery__hidden"
+data-srcset="{% static 'images/bencesi.png' %} 1200w, {% static 'images/bencesi.png' %} 300w, {% static 'images/bencesi.png' %} 1024w, {% static 'images/bencesi.png' %} 150w, {% static 'images/bencesi.png' %} 768w"
+data-src="{% static 'images/bencesi.png' %}"
+data-sizes="auto"
+alt=""
+data-caption=""
+data-credit=""
+>
+</div>
+
+                 </figure>
+
+<div class="tease--horizontal__text">
+     <span class="tease__overline">
+Podcastimizi İnceleyin
+</span>
+   <h1 class="tease__title">
+<em>Bencesi</em> Podcast
+</h1>
+     <span class="tease__subtitle">
+               Cihan Buğdaycı &amp; Salih Torun
+         </span>
+ </div>
+</div>
+</a>
+
+</article>
+           </li>
+           <li class="home__slider__item">
+               
+             <article class="tease--horizontal tease--horizontal--video">
+               <a href="https://www.youtube.com/watch?v=lktvDHJ1rns" class="tease--horizontal__link">
+                 <div class="tease--horizontal__inner">
+                         
+                           <figure class="tease--horizontal__image__size tease--horizontal__image__size--video js-modal-gallery__hidden">
+                                                 
+             
+             
+                 
+                 
+               <div class="lazy-img__mod ">
+                 <span class="lazy-img__placeholder" style="padding-top: 56.25%"></span>
+                 <img class="lazy-img lazyload tease--horizontal__image js-modal-gallery__hidden"
+                   data-srcset="{% static 'images/basariyadogru.png' %} 2560w, {% static 'images/basariyadogru.png' %} 300w, {% static 'images/basariyadogru.png' %} 1024w, {% static 'images/basariyadogru.png' %} 768w, {% static 'images/basariyadogru.png' %} 1536w, {% static 'images/basariyadogru.png' %} 2048w"
+                   data-src="{% static 'images/basariyadogru.png' %}"
+                   data-sizes="auto"
+                   alt=""
+                   data-caption=""
+                   data-credit=""
+                 >
+               </div>
+             
+                                           </figure>
+                   
+                   <div class="tease--horizontal__text">
+                               <span class="tease__overline">
+                         Video
+                       </span>
+                             <h1 class="tease__title">
+                                Üniversitelerde eğitim ve tercih dönemine dair merak edilenler 
+                     </h1>
+                     <span class="tease__subtitle">
+                        CNN TÜRK Başarıya Doğru Programı
+                 </span>
+                           </div>
+                 </div>
+               </a>
+             
+               </article>
+           </li>
+                               <li class="home__slider__item">
+               
+<article class="tease--horizontal tease--horizontal--podcast-episode theme--worn-leather-dark">
+<a href="https://www.youtube.com/watch?v=sFewHY2yNtA&t=5s" class="tease--horizontal__link">
+<div class="tease--horizontal__inner">
+
+ <figure class="tease--horizontal__image__size tease--horizontal__image__size--podcast-episode js-modal-gallery__hidden">
+                       
+
+
+
+
+<div class="lazy-img__mod ">
+<span class="lazy-img__placeholder" style="padding-top: 100%"></span>
+<img class="lazy-img lazyload tease--horizontal__image js-modal-gallery__hidden"
+data-srcset=" {% static 'images/yenigelecekicin.png' %} 1200w, {% static 'images/yenigelecekicin.png' %} 300w, {% static 'images/yenigelecekicin.png' %} 1024w, 
+{% static 'images/yenigelecekicin.png' %} 150w, {% static 'images/yenigelecekicin.png' %} 768w"
+data-src="{% static 'images/yenigelecekicin.png' %}"
+data-sizes="auto"
+alt=""
+data-caption=""
+data-credit=""
+>
+</div>
+
+                 </figure>
+
+<div class="tease--horizontal__text" style="padding-top:20px;">
+     <span class="tease__overline">
+Video
+</span>
+   <h1 class="tease__title">
+    Cihan Buğdaycı: Yeni Gelecekte Genç Lider Olmak 
+</h1>
+     <span class="tease__subtitle">
+               
+         </span>
+ </div>
+</div>
+</a>
+
+</article>
+           </li>
+                       </ul>
+
+<nav class="home__slider__controls slider__controls">
+<h1 class="visually-hidden"></h1>
+<div class="tns-nav js-featured-mobile-slider-nav">
+<button></button>
+<button></button>
+<button></button>
+</div>
+<div class="tns-controls js-featured-mobile-slider-controls">
+<button>&larr;</button>
+<button>&rarr;</button>
+</div>
+</nav>
+
+</section>
+</section>
+</header>
+
+
+
+<section class="home__section home__section--hubs">
+<header class="home__section__header">
+ <h1 class="home__heading">
+Yazılar
+</h1>
+
+ <p class="home__subheading">
+  Psikoloji, eğitim ve girişimcilik disiplinleri hakkında öğrendiklerimi ve fikirlerimi okurlarımla paylaşıyorum. 
+</p>
+</header>
+
+<div class="home__max-width__wrapper">
+<div class="home__hub-teases home__max-width__grid">
+         <div class="home__hub-tease">
+ 
+<aside class="hub-tease theme--atlas">
+
+<header class="hub-tease__header">
+
+<div class="hub-tease__thumbnail">
+               <img src="/static/images/insanauzananyol.jpeg"/>
+       </div>
+
+<div class="hub-tease__header__text">
+<h1 class="hub-tease__title">
+   İnsana Uzanan Yol 
+</h1>
+
+               <div class="hub-tease__description">
+       <p></p>
+
+   </div>
+
+<a href="/makaleler/insanauzananyol" class="hub-tease__link aa-chevron-parent">
+   Yazıya Git
+   <svg class="chevron">
+       <use href="/makaleler/insanauzananyol"/>
+   </svg>
+</a>
+</div>
+</header>
+
+<div class="hub-tease__links">
+
+<ul class="hub-tease__children">
+                       
+       <li class="hub-tease__child-item">
+           <a href="/makaleler/insanauzananyol" target=""
+              class="hub-tease__child-link aa-chevron-parent">
+               Yazıyı Okumak İçin Lütfen Tıklayınız
+
+
+               <svg class="chevron">
+                   <use href="/makaleler/insanauzananyol"/>
+               </svg>
+           </a>
+       </li>
+               </ul>
+</div>
+</aside>            </div>
+         <div class="home__hub-tease">
+ 
+<aside class="hub-tease theme--dare-to-lead">
+
+<header class="hub-tease__header">
+
+<div class="hub-tease__thumbnail">
+               <img src="/static/images/gununsonunda.jpeg" style="min-height:200px;"/>
+       </div>
+
+<div class="hub-tease__header__text">
+<h1 class="hub-tease__title">
+   Günün Sonunda Kim Başarılı Olacak ?
+</h1>
+
+               <div class="hub-tease__description">
+       <p></p>
+
+   </div>
+
+<a href="/makaleler/gununsonundakimbasariliolacak" class="hub-tease__link aa-chevron-parent">
+   Yazıya Git
+   <svg class="chevron">
+       <use href="/makaleler/gununsonundakimbasariliolacak"/>
+   </svg>
+</a>
+</div>
+</header>
+
+<div class="hub-tease__links">
+
+<ul class="hub-tease__children">
+                       
+       <li class="hub-tease__child-item">
+           <a href="/makaleler/gununsonundakimbasariliolacak" target=""
+              class="hub-tease__child-link aa-chevron-parent">
+               Yazıyı Okumak İçin Lütfen Tıklayınız
+
+
+               <svg class="chevron">
+                   <use href="/makaleler/gununsonundakimbasariliolacak"/>
+               </svg>
+           </a>
+       </li>
+               </ul>
+</div>
+</aside>            </div>
+         <div class="home__hub-tease">
+ 
+<aside class="hub-tease theme--the-gifts-of-imperfection">
+
+<header class="hub-tease__header">
+
+<div class="hub-tease__thumbnail">
+               <img src="/static/images/beceritoplumundan.jpeg"/>
+       </div>
+
+<div class="hub-tease__header__text">
+<h1 class="hub-tease__title">
+   Beceri Toplumundan Varoluş Toplumuna
+</h1>
+
+               <div class="hub-tease__description">
+       <p></p>
+
+   </div>
+
+<a href="/makaleler/beceritoplumundanvarolustoplumuna" class="hub-tease__link aa-chevron-parent">
+   Yazıya Git
+   <svg class="chevron">
+       <use href="/makaleler/beceritoplumundanvarolustoplumuna"/>
+   </svg>
+</a>
+</div>
+</header>
+
+<div class="hub-tease__links">
+
+<ul class="hub-tease__children">
+                       
+       <li class="hub-tease__child-item">
+           <a href="/makaleler/beceritoplumundanvarolustoplumuna" target=""
+              class="hub-tease__child-link aa-chevron-parent">
+              Yazıyı Okumak İçin Lütfen Tıklayınız
+
+
+               <svg class="chevron">
+                   <use href="/makaleler/beceritoplumundanvarolustoplumuna"/>
+               </svg>
+           </a>
+       </li>
+               </ul>
+</div>
+</aside>            </div>
+         <div class="home__hub-tease">
+ 
+<aside class="hub-tease theme--daring-classrooms">
+
+<header class="hub-tease__header">
+
+<div class="hub-tease__thumbnail">
+               <img src="/static/images/sirketlerkendimezun.jpeg" style="min-height:150px;"/>
+       </div>
+
+<div class="hub-tease__header__text">
+<h1 class="hub-tease__title">
+   Şirketler Kendi Mezunlarını Yetiştirirse
+</h1>
+
+               <div class="hub-tease__description">
+       <p></p>
+
+   </div>
+
+<a href="{% url 'sirketlerkendi' %}" class="hub-tease__link aa-chevron-parent">
+   Yazıya Git
+   <svg class="chevron">
+       <use href="{% url 'sirketlerkendi' %}"/>
+   </svg>
+</a>
+</div>
+</header>
+
+<div class="hub-tease__links">
+
+<ul class="hub-tease__children">
+                       
+       <li class="hub-tease__child-item">
+           <a href="{% url 'sirketlerkendi' %}" target=""
+              class="hub-tease__child-link aa-chevron-parent">
+              Yazıyı Okumak İçin Lütfen Tıklayınız
+
+
+               <svg class="chevron">
+                   <use href="{% url 'sirketlerkendi' %}"/>
+               </svg>
+           </a>
+       </li>
+               </ul>
+</div>
+</aside>            </div>
+     </div>
+</div>
+</section>
+
+
+
+
+
+<section class="home__section home__section--books">
+<h1 class="visually-hidden">Kitaplar</h1>
+<div class="home__max-width__wrapper">
+<article class="related--feature book">
+<div class="related--feature__text">
+<span class="related--feature__label">Cihan Buğdaycı</span>
+<div class="related--feature__post-content">
+<h2 class="related--feature__title">
+Seçilmiş Huzursuzluk
+</h2>
+ <div class="related--feature__description">
+<p>İnsan midesi olmasaydı, hayat nasıl bir şekil alırdı?</p>
+</div>
+</div>
+<a href=""  class="related--feature__cta" style="display:none;">Kitapları İncele</a>
+<div class="book-topper" style="width:240px;margin-top:36px;">
+ <div class="purchase-options">
+<button class="related--feature__cta">
+<span><a href="/kitaplar">Kitapları İncele</a></span>
+
+</button>
+
+</div>
+</div>
+</div>
+
+<a href="/kitaplar/secilmishuzursuzluk" title="Seçilmiş Huzursuzluk"
+class="related--feature__image__link">
+<img class="lazy-img lazyload tease__image js-modal-gallery__hidden"
+data-srcset="{% static 'images/odulsecilmis.jpg' %} 1200w, {% static 'images/odulsecilmis.jpg' %} 300w, {% static 'images/odulsecilmis.jpg' %} 1024w, {% static 'images/odulsecilmis.jpg' %} 150w, 
+{% static 'images/odulsecilmis.jpg' %} 768w"
+data-src="{% static 'images/odulsecilmis.jpg' %}"
+data-sizes="auto"
+alt="Seçilmiş Huzursuzluk"
+data-caption=""
+data-credit=""
+>
+</a>
+</article>    </div>
+
+<section class="home__all-books">
+     <h1 class="home__overline home__max-width__wrapper">
+
+</h1>
+
+
+
+
+<ul class="home__slider__list home__slider__list--books js-book-slider slider__list">
+                             
+</ul>
+
+<nav class="home__slider__controls home__max-width__wrapper slider__controls">
+<h1 class="visually-hidden"></h1>
+<div class="tns-nav js-book-slider-nav">
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+</div>
+<div class="tns-controls js-book-slider-controls">
+
+</div>
+</nav>
+
+</section>
+</section>
+
+</main>
+
+ <aside>
+
+</aside>
+
+
+{% endblock %}
